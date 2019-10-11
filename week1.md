@@ -1,12 +1,41 @@
 
-## Generate Parentheses
+## Generate Parentheses: solution
 
 ```python
+class Solution:
+    
+    def generateParenthesis(self, n: int) -> List[str]:
+        def generate(A = []):
+            if len(A) == 2 * n:
+                if self.valid(A):
+                    results.append("".join(A))
+            else:
+                A.append("(")
+                generate(A)
+                A.pop()
+                A.append(")")
+                generate(A)
+                A.pop()
 
+        results = []
+        generate()
+        return results
+    
+    
+    def valid(self, A):
+        bal = 0
+        for c in A:
+            if c == "(":
+                bal += 1
+            else:
+                bal -= 1
+                if bal < 0:
+                    return False
+        return bal == 0
 ```
 
 
-## Product of Array Except Self
+## Product of Array Except Self: solution 
 
 O(N)
 ```python
