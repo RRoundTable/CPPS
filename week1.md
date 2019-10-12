@@ -94,7 +94,28 @@ class Solution:
 ```
 check!
 
-1. retry
+1. retry: 2019-10-12
+
+- time: O(N)
+
+- space: O(1)
+
+```python
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:        
+        answers = [1] * len(nums)
+        # right-side
+        for i in range(1, len(nums)):
+            answers[i] = answers[i-1] * nums[i-1]
+        
+        # left-side
+        rightside = nums[-1]
+        for i in range(len(nums)-2, -1, -1):
+            answers[i] = rightside * answers[i]
+            rightside *= nums[i]
+        
+        return answers
+```
 
 ## Game of Life: solved
 
