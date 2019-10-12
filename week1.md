@@ -1,6 +1,11 @@
 
 ## Generate Parentheses: solution
 
+- brute force
+
+time complexcity: O(N)
+space complexity:
+
 ```python
 class Solution:
     
@@ -34,7 +39,11 @@ class Solution:
         return bal == 0
 ```
 
-backtracking
+- backtracking
+
+time complexcity:
+space complexity:
+
 
 ```python
 class Solution:
@@ -58,7 +67,10 @@ class Solution:
 
 ## Product of Array Except Self: solution 
 
-O(N)
+time complexcity: O(N)
+space complexity:
+
+
 ```python
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
@@ -77,7 +89,8 @@ class Solution:
 
 ## Game of Life: solved
 
-O(MN)
+time complexcity: O(MN)
+space complexity:
 
 ```python
 import copy
@@ -132,7 +145,9 @@ class Solution:
 
 ## Reorder Data in Log Files: solved
 
-O(N)
+time complexcity: O(N)
+space complexity:
+
 ```python
 import re
 class Solution:
