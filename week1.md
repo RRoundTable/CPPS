@@ -3,8 +3,9 @@
 
 - brute force
 
-time complexcity: O(N)
-space complexity:
+time complexcity: O($2 ^ 2N * N$)
+
+space complexity: O($2 ^ 2N * N$)
 
 ```python
 class Solution:
@@ -41,9 +42,9 @@ class Solution:
 
 - backtracking
 
-time complexcity:
-space complexity:
+time complexcity:  O($4 ^ N / N ^ 0.5$)
 
+space complexity: O($4 ^ N / N ^ 0.5$)
 
 ```python
 class Solution:
@@ -63,12 +64,18 @@ class Solution:
         ans = set(ans)
         return ans
 ```
+check!
+
+1. retry
+
+2. how to calculate time complexity
 
 
 ## Product of Array Except Self: solution 
 
 time complexcity: O(N)
-space complexity:
+
+space complexity: O(N)
 
 
 ```python
@@ -85,12 +92,15 @@ class Solution:
             rightproduct *= nums[i]
         return results
 ```
+check!
 
+1. retry
 
 ## Game of Life: solved
 
 time complexcity: O(MN)
-space complexity:
+
+space complexity: O(MN)
 
 ```python
 import copy
@@ -142,10 +152,16 @@ class Solution:
 
 ```
 
+check! 
+1. how to reduce space complexity
+
+
+
 
 ## Reorder Data in Log Files: solved
 
 time complexcity: O(N)
+
 space complexity:
 
 ```python
@@ -174,4 +190,7 @@ class Solution:
                 letter[i], letter[i + 1] = total           
         return letter + digit
 ```
+
+check!
+1. how to calculate time complexity
 
