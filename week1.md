@@ -160,7 +160,7 @@ check!
 
 ## Reorder Data in Log Files: solved
 
-time complexcity: O(N)
+time complexcity: O(ANlog(N))
 
 space complexity:
 
@@ -193,4 +193,6 @@ class Solution:
 
 check!
 1. how to calculate time complexity
+2. split을 많이 사용하지 않는 것이 좋다.
+    print(word.split(', ', 0)) 
 
