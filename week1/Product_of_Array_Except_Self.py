@@ -17,7 +17,7 @@ Could you solve it with constant space complexity? (The output array does not co
 - time complexity: O(N)
 - space complexity: O(1) (The output array does not count as extra space for the purpose of space complexity analysis.)
 '''
-
+from typing import List
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:        
         answers = [1] * len(nums)

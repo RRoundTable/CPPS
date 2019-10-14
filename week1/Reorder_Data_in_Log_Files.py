@@ -36,6 +36,7 @@ logs[i] is guaranteed to have an identifier, and a word after the identifier.
 - space complexity: 
 
 '''
+from typing import List
 
 class Solution:
     def reorderLogFiles(self, logs: List[str]) -> List[str]:

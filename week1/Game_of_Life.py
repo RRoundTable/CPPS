@@ -38,7 +38,7 @@ In this question, we represent the board using a 2D array. In principle, the boa
 
 
 '''
-
+from typing import List
 class Solution:
     def gameOfLife(self, board: List[List[int]]) -> None:
         """
@@ -52,7 +52,7 @@ class Solution:
                 low_row = max(row - 1, 0)
                 high_col = min(col + 1, ncols - 1)
                 low_col = max(col - 1, 0)
-                
+
                 temp = self.get_sum(board, low_row, high_row, low_col, high_col)
                 if board[row][col] == 1:
                     temp -= 1
