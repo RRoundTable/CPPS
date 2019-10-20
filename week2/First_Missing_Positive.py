@@ -56,3 +56,18 @@ class Solution:
         for i in range(2, max_val):
             if check[i] == 0:
                 return i
+
+'''
+issue: space complexity O(N) -> O(1)
+'''
+
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        """O(N) / O(1)"""
+        for i in range(len(nums)):
+            while 0 < nums[i] <= len(nums) and nums[i] != nums[nums[i]-1]:
+                nums[nums[i]-1], nums[i] = nums[i], nums[nums[i]-1]
+        for i in range(len(nums)):
+            if nums[i] != i + 1:
+                return i + 1
+        return len(nums) + 1

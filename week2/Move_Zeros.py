@@ -14,7 +14,6 @@ Minimize the total number of operations.
 '''
 from typing import List
 
-
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
@@ -29,3 +28,21 @@ class Solution:
                     break
             else:
                 i += 1
+
+'''
+issue: list slice need extra memory. so It is need to be improved.
+'''
+
+class Solution_1:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        '''O(N)/O(1)'''
+        zero = 0
+        i = 0
+        while i < len(nums) - 1:
+            if nums[i] != 0:
+                nums[i], nums[zero] = nums[zero], nums[i]
+                zero += 1
+            i += 1
