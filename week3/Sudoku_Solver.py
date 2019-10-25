@@ -47,32 +47,78 @@ class Solution:
                 matrix_idx = i // 3 + j // 3 * 3
                 matrix_dict[matrix_idx].add(board[i][j])
 
-        possible = defaultdict(lambda: [])
+        possible = self.get_possible(board, row_dict, col_dict, matrix_dict)
+        
+        def undo(board, row_dict, col_dict, matrix_dict, key, ele):
+            i, j = int(key[0]), int(key[1])
+            row_dict[i].remove(ele)
+            col_dict[j].remove(ele)
+            matrix_idx = i // 3 + j // 3 * 3
+            matrix_dict[matrix_idx].remove(ele)
+            board[i][j] = "."
 
-        total = set(str(i) for i in range(0, 10))
-        for i in range(nrows):
-            for j in range(ncols):
+        def simulator(row_dict, col_dict, matrix_dict):
+            possible = self.get_possible(board, row_dict, col_dict, matrix_dict)
+            if len(possible.keys()) == 0:
+                if self.check_board(board):
+                    return True
+                else:
+                    return False
+            k = list(possible.keys())[0]
+            print(possible.keys())
+            for ele in possible[k]:
+                i, j = int(k[0]), int(k[1])
+                matrix_idx = i // 3 + j // 3 * 3
+                row_dict[i].add(ele)
+                col_dict[j].add(ele)
+                matrix_dict[matrix_idx].add(ele)
+                board[i][j] = ele
+                complete = simulator(row_dict, col_dict, matrix_dict)
+                if complete:
+                    return complete
+                else:
+                    undo(board, row_dict, col_dict, matrix_dict, k, ele)
+
+        simulator(row_dict, col_dict, matrix_dict)
+
+    def check_board(self, board):
+        for i in range(len(board)):
+            for j in range(len(board[0])):
                 if board[i][j] == ".":
-                    matrix_idx = i // 3 + j // 3 * 3
-                    t = total - row_dict[i]
-                    possible[str(i) + str(j)] += list(
-                        total - row_dict[i] - col_dict[j] - matrix_dict[matrix_idx]
-                    )
+                    return False
+        return True
 
     def get_possible(self, board, row_dict, col_dict, matrix_dict):
         possible = defaultdict(lambda: [])
+        total = set(str(i) for i in range(1, 10))
 
-        total = set(str(i) for i in range(0, 10))
         for i in range(len(board)):
             for j in range(len(board[0])):
                 if board[i][j] == ".":
                     matrix_idx = i // 3 + j // 3 * 3
-                    t = total - row_dict[i]
                     ele = list(
-                        total - row_dict[i] - col_dict[j] - matrix_dict[matrix_idx]
+                        total - (row_dict[i] | col_dict[j] | matrix_dict[matrix_idx])
                     )
                     if not ele:
                         continue
                     possible[str(i) + str(j)] += ele
+                    return possible
         return possible
+
+board = [
+    ["5", "3", ".", ".", "7", ".", ".", ".", "."],
+    ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+    [".", "9", "8", ".", ".", ".", ".", "6", "."],
+    ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+    ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+    ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+    [".", "6", ".", ".", ".", ".", "2", "8", "."],
+    [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+    [".", ".", ".", ".", "8", ".", ".", "7", "9"],
+]
+
+solution = Solution()
+
+solution.solveSudoku(board)
+
 
