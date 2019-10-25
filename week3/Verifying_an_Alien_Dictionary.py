@@ -38,10 +38,28 @@ from typing import List
 
 class Solution:
     def isAlienSorted(self, words: List[str], order: str) -> bool:
-
+        """O(NlogN)/O(N)"""
         d = defaultdict(lambda: 0)
         for i in range(len(order)):
             d[order[i]] = i
 
         return words == sorted(words, key=lambda x: [d[ele] for ele in x])
+
+    def isAlienSorted2(self, words: List[str], order: str) -> bool:
+        """O(N)/O(N)"""
+        d = defaultdict(lambda: 0)
+        for i in range(len(order)):
+            d[order[i]] = i
+
+        words = [[d[w] for w in word] for word in words]
+
+        i = 0
+        j = 0
+
+        for i in range(len(words) - 1):
+            if words[i] < words[i + 1]:
+                continue
+            else:
+                return False
+        return True
 
