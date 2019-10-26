@@ -46,7 +46,7 @@ class Solution:
                     path.append(ele)
                     ans = max(ans, len(path))
                     path, i, ans = search(path, i + 1, ans)
-                path.pop(-1)
+                    path.pop(-1)
                 else:
                     if self.check_possible(path[-1], ele):
                         path.append(ele)
