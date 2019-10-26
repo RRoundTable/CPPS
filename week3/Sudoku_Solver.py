@@ -30,6 +30,7 @@ from typing import List
 
 class Solution:
     def solveSudoku(self, board: List[List[str]]) -> None:
+        '''O(1)/O(1)'''
         """
         Do not return anything, modify board in-place instead.
         """

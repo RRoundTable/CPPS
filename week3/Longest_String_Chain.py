@@ -37,22 +37,20 @@ class Solution:
         def search(path=[], i=0, ans=0):
             if i >= max_val:
                 return path, i, ans
-
-            temp_path = path
             temp_i = i
             for ele in d[keys[i]]:
-                path = copy.deepcopy(temp_path)
                 i = temp_i
                 if not path:
                     path.append(ele)
                     ans = max(ans, len(path))
                     path, i, ans = search(path, i + 1, ans)
+                    path.pop(-1)
                 else:
                     if self.check_possible(path[-1], ele):
                         path.append(ele)
                         ans = max(ans, len(path))
                         path, i, ans = search(path, i + 1, ans)
-
+                        path.pop(-1)
             return path, i, ans
 
         result = 0
