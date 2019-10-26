@@ -25,7 +25,7 @@ from typing import List
 class Solution:
 
     def longestStrChain(self, words: List[str]) -> int:
-        '''O()/()'''
+        '''O(NlogN)/O(N)'''
         d = defaultdict(lambda: [])
         words = sorted(words, key=lambda x: len(x))
 
@@ -63,39 +63,10 @@ class Solution:
             result = max(result, ans)
         return result
 
-    def check_possible(self, ele1, ele2):
+    def check_possible(self, ele1, ele2):        
         if len(ele1) != len(ele2) - 1:
             return False
-        key1 = set(ele1)
-        key2 = set(ele2)
-        diff = list(key2 - key1)
-        diff_inv = list(key1 - key2)
-        if len(diff) == 0 and not diff_inv:
-            j = 0
-            for i in range(len(ele1)):
-                if ele2[i + j] == ele1[i]:
-                    continue
-                else:
-                    if ele2[i] in key1:
-                        j += 1
-                        if j > 1:
-                            return False
-                    else:
-                        return False
-            return True
-
-        elif len(diff) == 1 and not diff_inv:
-            j = 0
-            for i in range(len(ele1)):
-                if ele2[i + j] == ele1[i]:
-                    continue
-                else:
-                    if ele2[i] in diff:
-                        j += 1
-                        if j > 1:
-                            return False
-                    else:
-                        return False
-            return True
-        else:
-            return False
+        for i in range(len(ele2)):
+            if ele1[:i] == ele2[:i] and ele1[i:] == ele2[i+1:]:
+                return True
+        return False
