@@ -20,6 +20,7 @@ Your algorithm's time complexity must be better than O(n log n), where n is the 
 from collections import defaultdict, Counter
 from typing import List
 from itertools import chain
+import heapq
 
 class Solution:
     def topKFrequent1(self, nums: List[int], k: int) -> List[int]:
