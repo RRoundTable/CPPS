@@ -21,6 +21,21 @@ class ListNode(object):
 
 
 class Solution(object):
+
+    def swapPairs(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        dummy = ListNode(0)
+        dummy.next = head
+        prev = dummy
+        while head and head.next:
+            prev.next, head.next.next, head.next = head.next, head, head.next.next
+            prev = head
+            head = head.next
+        return dummy.next
+
     def swapPairs2(self, head):
         """O(N)/O(1)
         :type head: ListNode

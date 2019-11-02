@@ -28,6 +28,7 @@ class ListNode(object):
 class Solution(object):
     def reverseKGroup(self, head, k):
         """
+        O(N)/O(1)
         :type head: ListNode
         :type k: int
         :rtype: ListNode
@@ -81,4 +82,18 @@ class Solution(object):
             if ngroup == 0 and leftout > 0:
                 prev.next = head
         return start
+
+    def reverseKGroup(self, head, k):
+        '''recursive'''
+        cnt, prev, cur = 0, head, head
+        while prev and cnt < k:
+            prev, cnt = prev.next, cnt + 1
+        
+        if cnt < k:
+            return head
+        
+        while cur and cnt:
+            cur.next, prev, cur, cnt = prev, cur, cur.next, cnt - 1
+        head.next = self.reverseKGroup(cur, k)
+        return prev
 
