@@ -94,7 +94,7 @@ class Solution(object):
         """
         if not head or not head.next:
             return head
-        p = self.reverseList(head.next)
+        p = self.reverseList4(head.next)
         head.next.next = head
         head.next = None
         return p
