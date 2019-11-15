@@ -21,25 +21,20 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 
 
 class Solution(object):
-    def combinationSum(self, candidates, target):
-        """O()
-        :type candidates: List[int]
-        :type target: int
-        :rtype: List[List[int]]
+    def rob(self, nums):
         """
-
-        self.ans = []
-
-        def backtracking(remain, path):
-            if remain < 0:
-                return
-            if remain == 0:
-                path = sorted(path)
-                if path not in self.ans:
-                    self.ans.append(path)
-                return
-            for c in candidates:
-                backtracking(remain - c, path + [c])
-
-        backtracking(target, [])
-        return self.ans
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums :
+            return 0
+        if len(nums) == 1:
+            return nums[0]
+        
+        dp = [0] * len(nums)
+        dp[0] = nums[0]
+        dp[1] = max(nums[0], nums[1])
+        for i in range(2, len(nums)):
+            dp[i] = max(dp[i-2] + nums[i], dp[i-1]) 
+        
+        return dp[-1]
