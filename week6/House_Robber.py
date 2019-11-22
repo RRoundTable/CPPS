@@ -38,3 +38,28 @@ class Solution(object):
             dp[i] = max(dp[i-2] + nums[i], dp[i-1]) 
         
         return dp[-1]
+
+class Solution(object):
+    def rob(self, nums):
+        """O(N)/O(1)
+        :type nums: List[int]
+        :rtype: int
+        """
+        dp = [0] + nums[:2]
+        for i in range(2, len(nums)):
+            dp[0], dp[1], dp[2] = dp[1], dp[2], nums[i]
+            dp[2], dp[1] = max(dp[0] + dp[2], dp[1])
+        return max(dp)
+
+    
+class Solution(object):
+    def rob(self, nums):
+        """O(N)/O(1)
+        :type nums: List[int]
+        :rtype: int
+        """
+        dp = [0] + nums[:2]
+        for i in range(2, len(nums)):
+            dp[0], dp[1], dp[2] = dp[1], dp[2], nums[i]
+            dp[2] += max(dp[0], dp[1] - nums[i-1])
+        return max(dp)
