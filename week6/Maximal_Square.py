@@ -17,7 +17,7 @@ Output: 4
 
 class Solution(object):
     def maximalSquare(self, matrix):
-        """
+        """O(MN)/O(MN)
         :type matrix: List[List[str]]
         :rtype: int
         """
