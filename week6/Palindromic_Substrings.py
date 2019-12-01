@@ -26,6 +26,7 @@ The input string length won't exceed 1000.
 
 
 class Solution(object):
+    
     def countSubstrings(self, s):
         """O(N ^ 2)/O(1)
         small -> long 
@@ -33,6 +34,7 @@ class Solution(object):
         :rtype: int
         """
         ans = len(s)
+
         for i in range(len(s) - 1):
             if s[i] == s[i + 1]:
                 left, right, ans = i - 1, i + 2, ans + 1
@@ -48,4 +50,28 @@ class Solution(object):
                         left, right, ans = left - 1, right + 1, ans + 1
                     else:
                         break
+        return ans
+
+
+class Solution(object):
+    def countSubstrings(self, s):
+        """
+        small -> long 
+        :type s: str
+        :rtype: int
+        """
+        def move(left, right, ans):
+            while left >= 0 and right < len(s):
+                if s[left] == s[right]:
+                    left, right, ans = left - 1, right + 1, ans + 1
+                else: break
+            return ans
+        ans = len(s)
+        for i in range(len(s) - 1):
+            if s[i] == s[i + 1]:
+                left, right, ans = i - 1, i + 2, ans + 1            
+                ans = move(left, right, ans)
+            if i > 0 and s[i - 1] == s[i + 1]:
+                left, right, ans = i - 2, i + 2, ans + 1
+                ans = move(left, right, ans)
         return ans

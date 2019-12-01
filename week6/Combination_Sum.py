@@ -82,7 +82,7 @@ class Solution(object):
 
 class Solution(object):
     def combinationSum(self, candidates, target):
-        """
+        """O(N^T) /O(N ^T)
         :type candidates: List[int]
         :type target: int
         :rtype: List[List[int]]
@@ -103,6 +103,7 @@ class Solution(object):
 class Solution(object):
     def combinationSum(self, candidates, target):
         """Dynamic Programming
+        O(N*(T^2))/O(N*(T^2))
         :type candidates: List[int]
         :type target: int
         :rtype: List[List[int]]
