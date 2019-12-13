@@ -21,11 +21,15 @@ Given n = 3, there are a total of 5 unique BST's:
 import math
 class Solution:
     def numTrees(self, n: int) -> int:
-        '''O(N^2)/O(N)'''
+        '''Catlan number'''
+        return int(math.factorial(2*n)/(math.factorial(n)*math.factorial(n+1)))
+    
+class Solution:
+    def numTrees(self, n: int) -> int:
         dp = [1] * n
         for i in range(1, n):
             temp = 0
             for j in range(i+1):
-                temp += dp[i-j-1] * dp[j-1] if j - 1 >= 0 else dp[i-j-1]
+                temp += dp[i-j-1] * dp[j-1]
             dp[i] = temp
         return dp[-1]
