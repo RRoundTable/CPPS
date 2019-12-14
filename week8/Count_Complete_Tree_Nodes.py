@@ -43,3 +43,16 @@ class Solution:
         if node.right is not None:
             depth = self.depth(node.right, count + 1, depth)
         return depth
+
+class Solution:
+    def countNodes(self, node: TreeNode) -> int:
+        if node is None: return 0
+        left, right, lh, rh = node, node, 0, 0
+        while left:
+            left, lh = left.left, lh + 1
+        while right:
+            right, rh = right.right, rh + 1
+        if rh == lh:
+            return 2 ** rh - 1
+        return self.countNodes(node.left) + self.countNodes(node.right) + 1
+            

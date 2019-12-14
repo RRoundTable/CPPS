@@ -56,9 +56,11 @@ class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
         def build(stop):
             if inorder and inorder[0] != stop:
-                root = TreeNode(preorder.pop(0))
+                root = TreeNode(preorder.pop())
                 root.left = build(root.val)
-                inorder.pop(0)
+                inorder.pop()
                 root.right = build(stop)
                 return root
+        preorder.reverse()
+        inorder.reverse()
         return build(None)
