@@ -59,5 +59,17 @@ class Solution:
             dfs(node.right)
         dfs(root)
         return self.ans
+
+class Solution:
+    def diameterOfBinaryTree(self, root: TreeNode) -> int:
+        '''O(N)/O(H)'''
+        def dfs(node):
+            if node is None: return 0
+            left, right = dfs(node.left), dfs(node.right)
+            self.ans = max(self.ans, left + right)
+            return max(left, right) + 1
+        self.ans = 0
+        dfs(root)
+        return self.ans
         
         
