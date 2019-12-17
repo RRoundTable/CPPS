@@ -32,7 +32,7 @@ The number of keys in all rooms combined is at most 3000.
 
 class Solution:
     def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
-        '''O(N)/O()'''
+        '''O(AE)/O(A)'''
         d, indexs, n = {}, [0] * len(rooms), len(rooms)
         for i in range(len(rooms)):
             d[i] = rooms[i]
