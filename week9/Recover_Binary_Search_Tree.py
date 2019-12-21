@@ -138,7 +138,25 @@ class Solution:
             if cur.val < prev.val: drops.append((prev, cur))
             prev, cur = cur, cur.right
         drops[0][0].val, drops[-1][1].val = drops[-1][1].val, drops[0][0].val
+
         
+class Solution:
+    def recoverTree(self, root: TreeNode) -> None:
+        """O(N) / O(H)
+        Do not return anything, modify root in-place instead.
+        """
+        def traverse(node: TreeNode) -> None:
+            if not node: return
+            traverse(node.left)
+            if self.recent and node.val < self.recent.val:
+                if not self.fix: self.fix = [self.recent, node]
+                else: self.fix[1] = node
+            self.recent = node
+            traverse(node.right)
+        self.recent = self.fix = None; traverse(root)
+        self.fix[0].val, self.fix[1].val = self.fix[1].val, self.fix[0].val
+
+
         
         
         
