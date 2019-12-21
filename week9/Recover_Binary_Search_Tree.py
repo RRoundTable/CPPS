@@ -139,7 +139,7 @@ class Solution:
             prev, cur = cur, cur.right
         drops[0][0].val, drops[-1][1].val = drops[-1][1].val, drops[0][0].val
 
-        
+
 class Solution:
     def recoverTree(self, root: TreeNode) -> None:
         """O(N) / O(H)
@@ -156,6 +156,20 @@ class Solution:
         self.recent = self.fix = None; traverse(root)
         self.fix[0].val, self.fix[1].val = self.fix[1].val, self.fix[0].val
 
+
+class Solution:
+    def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
+        '''Iterative'''
+        stack = [0]
+        visited = set(stack)
+        while stack:
+            i = stack.pop()
+            for r in rooms[i]:
+                if r not in visited:
+                    visited.add(r)
+                    stack.append(r)
+                    if len(visited) == len(rooms): return True
+        return len(visited) == len(rooms)
 
         
         
