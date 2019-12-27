@@ -66,7 +66,10 @@ class Solution:
             
 class Solution:
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
-        '''union-find'''
+        '''
+        O(N)/O(N)
+        union-find
+        '''
         union = list(range(len(edges) + 1))
         def find(x):
             while x != union[x]:
