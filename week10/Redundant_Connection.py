@@ -80,4 +80,16 @@ class Solution:
             if uu == uv: return [u, v]
             union[uu], union[uv] = min(uu, uv), min(uu, uv)
             
+class Solution:
+    def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+        '''union-find'''
+        union = list(range(len(edges) + 1))
+        def find(x):
+            while x != union[x]:
+                x = union[x]
+            return x
+        for u, v in edges:
+            uu, uv = find(u), find(v)
+            if uu == uv: return [u, v]
+            union[uu] = uv
             
