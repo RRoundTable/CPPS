@@ -92,4 +92,19 @@ class Solution:
             uu, uv = find(u), find(v)
             if uu == uv: return [u, v]
             union[uu] = uv
+
+
+class Solution:
+    def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+        '''union-find'''
+        union = list(range(len(edges) + 1))
+        def find(x):
+            if union[x] == 0:
+                return x
+            union[x] = find(union[x])
+            return union[x]
+        for u, v in edges:
+            uu, uv = find(u), find(v)
+            if uu == uv: return [u, v]
+            union[uu] = uv
             
