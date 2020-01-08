@@ -45,3 +45,19 @@ class Solution(object):
                     left = None
                 i += 1
         return ans
+
+        
+class Solution(object):
+    def merge(self, intervals):
+        """O(NlogN)/O(N)
+        :type intervals: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        ans = []
+        for l, r in sorted(intervals, key=lambda x:x[0]):
+            if ans and ans[-1][1] >= l:
+                ans[-1][1] = max(ans[-1][1], r)
+            else:
+                ans.append([l, r])
+        return ans
+        
