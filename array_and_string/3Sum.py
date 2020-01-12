@@ -20,10 +20,10 @@ from collections import Counter, defaultdict
 from typing import List
 
 
-class Solution:
+class Solution1:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         '''O(N^2)/O(N)'''
-        count, d, n, ans = Counter(nums), defaultdict(lambda: set()), len(nums), set()
+        count, ans = Counter(nums), set()
         for k in count.keys():
             count[k] -= 1
             target = -k
@@ -34,9 +34,9 @@ class Solution:
                 if count[target -k] > 1 and target - k == k:
                     ans.add(tuple(sorted((-target, k, k))))
             count[-target] += 1  
-        return ans
+        return map(list, ans)
     
-class Solution(object):
+class Solution2(object):
     def threeSum(self, nums):
         '''O(N^2)/O(1)'''
         nums.sort()

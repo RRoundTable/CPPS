@@ -36,7 +36,6 @@ class Solution(object):
         :type B: List[int]
         :rtype: int
         """
-        
         self.ans, n = float('inf'), len(A)
         def backtrack(idx, prev, line, swap):
             if idx == n - 1:
@@ -108,4 +107,3 @@ class Solution(object):
         
         c1, c2, c3, c4 = is_possible(A, B, A[0]), is_possible(A, B, B[0]), is_possible(B, A, A[0]), is_possible(B, A, B[0])
         return min(c1, c2, c3, c4) if min(c1, c2, c3, c4) != float('inf') else -1
-    
