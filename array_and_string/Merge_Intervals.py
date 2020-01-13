@@ -24,8 +24,8 @@ class Solution(object):
         if len(intervals) < 2: return intervals
         intervals, array = sorted(intervals, key=lambda x: x[1]), []
         for i, (l, r) in enumerate(intervals):
-            array.append([l, i, 'left'])
-            array.append([r, i, 'right'])
+            array.append([l, i, -1])
+            array.append([r, i, 1])
         d = {i: (l, r) for i, (l, r) in enumerate(intervals)}
         array, i, maxval, ans = sorted(array, key=lambda x: x[0]), 0, 0, []
 
@@ -37,9 +37,9 @@ class Solution(object):
             if i == 0 or left is None:
                 left, maxval, i = array[i][0], max(maxval, d[array[i][1]][1]), i + 1
                 continue            
-            if array[i][2] == 'left':
+            if array[i][2] == -1:
                 maxval, i = max(maxval, d[array[i][1]][1]), i + 1
-            elif array[i][2] == 'right':
+            elif array[i][2] == 1:
                 if array[i][0] == maxval:
                     ans.append((left, maxval))    
                     left = None
