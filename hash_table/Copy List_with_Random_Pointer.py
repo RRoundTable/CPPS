@@ -63,12 +63,12 @@ class Solution:
         Iterative
         '''
         d, ans, start = {None: [None, None, None]}, None, head
-        while head != None:
+        while head:
             d[head] = [head.next, head.random, Node(head.val)]
             if ans is None: ans = d[head][2];
             head = head.next
         head = start
-        while head != None:
+        while head:
             next_node, rand_node, copy = d[head]
             copy.next, copy.random = d[next_node][2], d[rand_node][2]
             head = head.next
@@ -103,19 +103,19 @@ class Solution:
         '''
         if head is None: return None
         ans, start, copy = None, head, None
-        while head != None:
+        while head:
             copy = Node(head.val, head.next)
             if ans is None: ans = copy;
             copy.next, head.next = head.next, copy
             head = copy.next
             
         head = start
-        while head != None:
+        while head:
             head.next.random = head.random.next if head.random else None
             head = head.next.next
             
         head = start
-        while head != None:
+        while head:
             next_head = head.next.next
             head.next.next = head.next.next.next if head.next.next else None
             head = next_head

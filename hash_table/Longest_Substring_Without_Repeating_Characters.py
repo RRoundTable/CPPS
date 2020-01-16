@@ -25,10 +25,9 @@ class Solution:
         d, ans, i, j = {}, 0, -1, 0
         while j < len(s):
             if d.get(s[j], -1) == -1:
-                d[s[j]], j = j, j + 1
-            else:
-                ans = max(ans, j - i - 1)
-                while i < j:
-                    d[s[i+1]], i = -1, i + 1
-                    if s[i] == s[j]: break
+                d[s[j]], j = j, j + 1; continue
+            ans = max(ans, j - i - 1)
+            while i < j:
+                d[s[i+1]], i = -1, i + 1
+                if s[i] == s[j]: break
         return max(ans, j - i - 1)
