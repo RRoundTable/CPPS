@@ -1,5 +1,4 @@
 '''
-link: https://leetcode.com/problems/insert-delete-getrandom-o1/
 Design a data structure that supports all following operations in average O(1) time.
 
 insert(val): Inserts an item val to the set if not already present.
@@ -34,7 +33,6 @@ randomSet.getRandom();
 
 
 import random
-from typing import Dict, List
 
 
 class RandomizedSet:
@@ -43,8 +41,8 @@ class RandomizedSet:
         """
         Initialize your data structure here.
         """
-        self.dict: Dict[int, int] = {}
-        self.list: List[int] = []
+        self.dict = {}
+        self.list = []
 
     def insert(self, val: int) -> bool:
         """
@@ -61,7 +59,7 @@ class RandomizedSet:
         Removes a value from the set. Returns true if the set contained the specified element.
         """
         if self.dict.get(val, -1) != -1:
-            idx, last_element = self.dict.pop(val), self.list[-1]
+            idx, last_element = self.dict[val], self.list[-1]
             self.list[idx], self.dict[last_element] = last_element, idx
             self.list.pop()
             del self.dict[val]

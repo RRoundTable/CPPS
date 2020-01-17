@@ -27,7 +27,7 @@ class Solution(object):
         while d.get(n, True):
             if n == 1: return True
             d[n] = False
-            n = sum(int(s) ** 2 for s in str(n))
+            n = sum([int(s) ** 2 for s in str(n)])
         return False
 
 
@@ -43,6 +43,5 @@ class Solution(object):
         if self.seen[n]: return False
         self.seen[n], res = True, 0
         while n != 0: 
-            n, r = divmod(n, 10)
-            res += r ** 2
-        return res == 1 or self.isHappy(res)
+            res += (n % 10) ** 2; n = int(n / 10)
+        return True if res == 1 else self.isHappy(res)
