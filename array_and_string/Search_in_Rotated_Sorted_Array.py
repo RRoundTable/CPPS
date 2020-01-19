@@ -26,7 +26,7 @@ from bisect import bisect_left
 
 
 class Solution:
-    def find_pivot(self, nums: List[int]) -> int:
+    def find_pivot(self, nums):
         l, r = 0, len(nums) - 1
         while r - l > 1:
             m = (l + r) // 2
@@ -36,12 +36,11 @@ class Solution:
     
     def search(self, nums: List[int], target: int) -> int:
         pivot = self.find_pivot(nums)
-        array1, array2 = nums[:pivot+1], nums[pivot+1:]
-        max1 = array1[-1] if array1 else float('inf')
-        max2 = array2[-1] if array2 else float('inf')
+        max1 = nums[:pivot+1][-1] if nums[:pivot+1] else float('inf')
+        max2 = nums[pivot+1:][-1] if nums[pivot+1:] else float('inf')
         if max2 and max1 > max2 and max2 >= target:
-            i = bisect_left(array2, target)
+            i = bisect_left(nums[pivot+1:], target)
             return i + pivot + 1 if i + pivot + 1 < len(nums) and nums[i + pivot + 1] == target else -1
         else:
-            i = bisect_left(array1, target)
+            i = bisect_left(nums[:pivot+1], target)
             return i if nums and i < len(nums) and nums[i] == target else -1
