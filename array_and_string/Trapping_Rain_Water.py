@@ -11,6 +11,9 @@ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 '''
 
+
+from typing import List
+
 class Solution:
     def trap(self, height: List[int]) -> int:
         '''Brute-Force
@@ -50,4 +53,22 @@ class Solution:
                 h = min(height[i], height[s[-1]]) - height[top]
                 ans += dist * h
             s.append(i); i += 1
+        return ans
+
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        '''Two pointer
+        O(N)/O(1)
+        '''
+        ans, l, r = 0, 0, 0 
+        for i in range(1, len(height)):
+            if height[r] >= height[i]:
+                r = i
+            else:
+                while r > l and height[r] < height[i]:
+                    ans += min(height[i], height[l]) - height[r]
+                    height[r] = min(height[i], height[l])
+                    r -= 1
+                if height[l] <= height[i]: l, r = i, i
+                else: r = i
         return ans
