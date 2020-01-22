@@ -57,18 +57,35 @@ class Solution:
 
 class Solution:
     def trap(self, height: List[int]) -> int:
-        '''Two pointer
+        '''Two pointer1
         O(N)/O(1)
         '''
         ans, l, r = 0, 0, 0 
         for i in range(1, len(height)):
             if height[r] >= height[i]:
-                r = i
+                r = i; continue
+            while r > l and height[r] < height[i]:
+                ans += min(height[i], height[l]) - height[r]
+                height[r] = min(height[i], height[l])
+                r -= 1
+            if height[l] <= height[i]: l, r = i, i
+            else: r = i
+        return ans
+
+    
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        '''Two pointer2
+        O(N)/O(1)
+        '''
+        ans, l, r, left, right = 0, 0, len(height) - 1, 0, 0
+        while l < r:
+            if height[l] < height[r]:
+                ans += max(left - height[l], 0)
+                left = max(left, height[l])
+                l += 1
             else:
-                while r > l and height[r] < height[i]:
-                    ans += min(height[i], height[l]) - height[r]
-                    height[r] = min(height[i], height[l])
-                    r -= 1
-                if height[l] <= height[i]: l, r = i, i
-                else: r = i
+                ans += max(right - height[r], 0)
+                right = max(right, height[r])
+                r -= 1
         return ans
