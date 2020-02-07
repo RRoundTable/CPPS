@@ -78,14 +78,14 @@ class Solution:
         '''Two pointer2
         O(N)/O(1)
         '''
-        ans, l, r, left, right = 0, 0, len(height) - 1, 0, 0
+        ans, l, r, lmax, rmax = 0, 0, len(height) - 1, 0, 0
         while l < r:
             if height[l] < height[r]:
-                ans += max(left - height[l], 0)
-                left = max(left, height[l])
+                ans += max(lmax - height[l], 0)
+                lmax = max(lmax, height[l])
                 l += 1
             else:
-                ans += max(right - height[r], 0)
-                right = max(right, height[r])
+                ans += max(rmax - height[r], 0)
+                rmax = max(rmax, height[r])
                 r -= 1
         return ans
