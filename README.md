@@ -26,17 +26,17 @@
 | 21 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) | stack |                                                              | [A](./array_and_string/Maximal_Rectangle.py) | - |
 | 22 | [Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system) | hash |                                                              | [A](./array_and_string/Find_Duplicate_File_in_System.py) | + |
 | 23 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | DP |                                                              | [A](./DP/Longest_Palindromic_Substring.py) | + |
-| 24 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | DP |                                                              |                                                              |      |
-| 25 | [Coin Change](https://leetcode.com/problems/coin-change) | DP |                                                              |                                                              |      |
-| 26 | [Decode String](https://leetcode.com/problems/decode-string) | stack |                                                              |                                                              |      |
-| 27 | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | stack |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
+| 24 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | DP |                                                              | [A](./DP/Regular_Expression_Matching.py) | - |
+| 25 | [Coin Change](https://leetcode.com/problems/coin-change) | DP |                                                              | [A](./DP/Coin_Change.py) | + |
+| 26 | [Decode String](https://leetcode.com/problems/decode-string) | stack |                                                              | [A](./stack/Decode_String.py) | + |
+| 27 | [Task Scheduler](https://leetcode.com/problems/task-scheduler) | stack |                                                              | [A](./stack/Task_Scheduler.py) | - |
+| 28 | [Permutations](https://leetcode.com/problems/permutations) | DP |                                                              | [A](./DP/Permutations.py) | + |
+| 29 | [Subsets](https://leetcode.com/problems/subsets) | DP |                                                              | [A](./DP/Subsets.py) | + |
+| 30 | [Decode Ways](https://leetcode.com/problems/decode-ways) | DP |                                                              | [A](./DP/Decode_Ways.py) | - |
+| 31 | [Word Break](https://leetcode.com/problems/word-break) | DP |                                                              | [A](./DP/Word_Break.py) | + |
+| 32 | [Cherry Pickup](https://leetcode.com/problems/cherry-pickup) | DP |                                                              | [A](./DP/Cherry_Pickup.py) | - |
+| 33 |                                                              |          |                                                              |                                                              |      |
+| 34 |                                                              |          |                                                              |                                                              |      |
 |      |                                                              |          |                                                              |                                                              |      |
 |      |                                                              |          |                                                              |                                                              |      |
 |      |                                                              |          |                                                              |                                                              |      |
