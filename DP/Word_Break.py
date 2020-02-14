@@ -23,13 +23,41 @@ Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
 Output: false
 '''
 
+
+from collections import deque
+
+
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         '''O(N^2)/O(N)'''
         wordDict, N, dp = set(wordDict), len(s), [False] * len(s)
         for i in range(N):
-            for j in range(N):
+            for j in range(i, N):
                 if s[i:j+1] in wordDict:
                     if i == 0: dp[j] = True
                     if dp[i-1]: dp[j] = True   
         return dp[N-1]
+    
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        '''O(N^2)/O(N)'''
+        wordDict, N, dp = set(wordDict), len(s), [True]
+        for i in range(1, N + 1):
+            dp += any(dp[j] and s[j:i] in wordDict for j in range(i)),
+        return dp[-1]
+
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        '''O(N^2)/O(N)'''
+        wordDict, visited, queue = set(wordDict), [False] * len(s), deque([])
+        queue.append(0)
+        while queue:
+            start = queue.popleft()
+            if not visited[start]:
+                for end in range(start+1, len(s)+1):
+                    if s[start:end] in wordDict:
+                        queue.append(end)
+                        if end == len(s): return True
+                visited[start] = True
+        return False
