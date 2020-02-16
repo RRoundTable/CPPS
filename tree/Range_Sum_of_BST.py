@@ -31,3 +31,16 @@ class Solution:
             if curr.right: ans = traversal(curr.right, ans)
             return ans
         return traversal(root)
+
+
+class Solution:
+    def rangeSumBST(self, root: TreeNode, L: int, R: int) -> int:
+        stack, ans,visited = [], 0, set()
+        stack.append(root)
+        while stack:
+            node = stack.pop()
+            if node.val >= L and node.val <= R: ans += node.val
+            if node.val not in visited:
+                if node.left: stack.append(node.left)
+                if node.right: stack.append(node.right)
+        return ans
