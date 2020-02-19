@@ -45,7 +45,7 @@ class Solution:
                 right = dp(node.right)
                 curr_sum = max(left, 0) + max(right, 0) + node.val
                 ans = max(ans, curr_sum)
-                return max(left, 0) + max(right, 0) + node.val if node == root else max(left, right, 0) + node.val 
+                return max(left, right, 0) + node.val 
             return float('-inf')
         dp(root)
-        return ans if ans > float('-inf') else 0
+        return ans 
