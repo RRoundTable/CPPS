@@ -46,3 +46,24 @@ class Solution:
             return 0
         have(root)
         return lca
+
+
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        stack = [root]
+        parent = {root: None}
+        while stack:
+            node = stack.pop()
+            if node.left:
+                parent[node.left] = node
+                stack.append(node.left)
+            if node.right:
+                parent[node.right] = node
+                stack.append(node.right)
+        acenstor = set()
+        while p:
+            acenstor.add(p)
+            p = parent[p]
+        while q not in acenstor:
+            q = parent[q]
+        return q
