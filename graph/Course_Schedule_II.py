@@ -27,10 +27,11 @@ The input prerequisites is a graph represented by a list of edges, not adjacency
 You may assume that there are no duplicate edges in the input prerequisites.
 
 '''
-from collections import defaultdict
+from collections import defaultdict, deque
 
 
 class Solution:
+    '''O(|V|+|E|)/O(|V|+|E|)'''
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         ans, edges, color, is_possible = [None] * numCourses, defaultdict(list), {n: 0 for n in range(numCourses)}, True
         
@@ -50,3 +51,24 @@ class Solution:
             if color[v] == 0: dfs(v)
             
         return ans if is_possible else []
+    
+    
+class Solution:
+    '''O(|V|+|E|)/O(|V|+|E|)'''
+    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        
+        edges, degree, ans = defaultdict(list), defaultdict(int), []
+        
+        for end, start in prerequisites:
+            edges[start].append(end)
+            degree[end] += 1
+            
+        queue = deque([n for n in range(numCourses) if degree[n] == 0])
+        
+        while queue:
+            zero = queue.popleft()
+            ans.append(zero)
+            for n in edges[zero]:
+                degree[n] -= 1
+                if degree[n] == 0: queue.append(n)
+        return len(ans) == numCourses and ans or []
