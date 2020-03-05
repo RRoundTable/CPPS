@@ -26,7 +26,7 @@ class Solution:
         return max(ans, len(stack))
         
 class Solution:
-    '''O(N)/O(N)'''
+    '''O(NlogN)/O(N)'''
     def longestConsecutive(self, nums: List[int]) -> int:
         s, edges = set([ele for ele in nums]), {}
     
@@ -40,7 +40,8 @@ class Solution:
         
         def find(a):
             if u[a] == a: return a
-            return find(u[a])
+            u[a] = find(u[a])
+            return u[a]
         
         for ele in nums:
             if edges.get(ele, float('inf')) < float('inf'):
@@ -50,3 +51,16 @@ class Solution:
             u[ele] = find(ele)
             
         return nums and max(Counter(u.values()).values()) or 0
+
+
+class Solution:
+    '''O(N)/O(N)'''
+    def longestConsecutive(self, nums: List[int]) -> int:
+        s, ans, c = set(nums), 0, 0
+        for ele in nums:
+            if ele - 1 not in s:
+                c = 1
+                while ele + 1 in s:
+                    ele, c = ele + 1, c + 1
+            ans = max(ans, c)
+        return ans

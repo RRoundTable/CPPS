@@ -55,6 +55,7 @@ class Solution:
         
         
 class Solution:
+    '''O(N^2 * logN)/O(N)'''
     def findCircleNum(self, M: List[List[int]]) -> int:       
         sets, N = [i for i in range(len(M))], len(M)
         
