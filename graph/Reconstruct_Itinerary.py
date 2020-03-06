@@ -26,6 +26,7 @@ from typing import List
 
 
 class Solution:
+    '''O(E^d)/O(E)'''
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         
         count, edges, N = defaultdict(int), defaultdict(list), len(tickets)
@@ -47,3 +48,31 @@ class Solution:
                 count[node, v] += 1; path.pop()
             return path
         return dfs('JFK')
+
+
+class Solution:
+    def findItinerary(self, tickets: List[List[str]]) -> List[str]:
+        edges, N = defaultdict(list), len(tickets)
+        for start, end in sorted(tickets, reverse=True):
+            edges[start].append(end)
+        path, i = [None] * (N + 1), N
+        def visit(node):
+            nonlocal i
+            while edges[node]:
+                visit(edges[node].pop())
+            path[i] = node; i -= 1
+        visit('JFK')
+        return path
+           
+           
+class Solution:
+    def findItinerary(self, tickets: List[List[str]]) -> List[str]:
+        edges, N = defaultdict(list), len(tickets)
+        for start, end in sorted(tickets, reverse=True):
+            edges[start].append(end)
+        path, i, stack, visited = [None] * (N + 1), N, ['JFK'], set()
+        while stack:
+            while edges[stack[-1]]:
+                stack += edges[stack[-1]].pop(),
+            path[i] = stack.pop(); i -= 1
+        return path
