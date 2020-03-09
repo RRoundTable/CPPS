@@ -45,14 +45,18 @@
 | 40 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | tree |                                                              | [A](./tree/Lowest_Common_Ancestor_of_a_Binary_Tree.py) | + |
 | 41 | [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree) | tree |                                                              | [A](./tree/Binary_Search_Tree_to_Greater_Sum_Tree.py) | + |
 | 42 | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest) | tree |                                                              | [A](./tree/Delete_Nodes_And_Return_Forest.py) | + |
-| 43 |                                                              | tree |                                                              | [A](./tree/) | + |
-| 44 |                                                              | tree |                                                              | [A](./tree/) |      |
-| 45 |                                                              | tree |                                                              | [A](./tree/) |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              |      |
-|      |                                                              |          |                                                              |                                                              ||
+| 43 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | graph |                                                              | [A](./graph/Longest_Consecutive_Sequence.py) | + |
+| 44 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii) | graph |                                                              | [A](./graph/Course_Schedule_II.py) | -    |
+| 45 | [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary) | graph |                                                              | [A](./graph/Reconstruct_Itinerary)                           | + |
+| 46 | [Friend Circles](https://leetcode.com/problems/friend-circles) | graph |                                                              | [A](./graph/Friend_Circles.py) | + |
+| 47 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite) | graph |                                                              | [A](./graph/Is_Graph_Bipartite.py) | = |
+| 48 | [Course Schedule](https://leetcode.com/problems/course-schedule) | graph |                                                              | [A](./graph/Course_Schedule.py) | + |
+| 49 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | graph |                                                              | [A](./graph/Evaluate_Division.py) | - |
+| 50 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | graph |                                                              | [A](./graph/Network_Delay_Time.py) |-|
+| 51 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings) | graph | |  ||
+| 52 | [Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree) | graph | |  ||
+|  |  |  | |  ||
+|  |  |  | |  ||
 
 +: Solved within 30 min
 

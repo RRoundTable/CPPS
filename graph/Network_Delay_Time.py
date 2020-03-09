@@ -29,6 +29,7 @@ from heapq import heappop, heappush
 
 
 class Solution:
+    '''O(N^2 + E)/O(N+E)'''
     def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
         
         Q, edges, dist = set(), defaultdict(dict), {K:0}
@@ -48,6 +49,7 @@ class Solution:
     
     
 class Solution:
+    '''O(N^2 + E)/O(N+E)'''
     def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
         Q, edges, dist = [(0, K)], defaultdict(list), {}
         for u, v, w in times:
