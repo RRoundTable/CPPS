@@ -25,12 +25,13 @@ Note:
 1 <= A.length == B.length <= 20
 A and B contain only lowercase letters from the set {'a', 'b', 'c', 'd', 'e', 'f'}
 '''
-
+from collections import deque
 
 class Solution:
+    '''O(2^(N+W))/O(2^(N+W))'''
     def kSimilarity(self, A: str, B: str) -> int:
         memo = {B:0}
-        
+
         def swap(i, j):
             nonlocal A
             a, b = A[i], A[j]  
@@ -50,3 +51,31 @@ class Solution:
                 swap(i, j)
             return memo[pre]
         return dfs(0)
+
+
+class Solution:
+    def kSimilarity(self, A: str, B: str) -> int:
+        queue, seen = deque([A]), {A: 0}
+        
+        def swap(A, i, j):
+            a, b = A[i], A[j]  
+            A = A[:i] + b + A[i+1:]
+            A = A[:j] + a + A[j+1:]
+            return A
+        
+        def neighbor(A):        
+            for i in range(len(A)):
+                if A[i] != B[i] : break
+            for j in range(i+1, len(A)):
+                A = swap(A, i, j)
+                yield A
+                A = swap(A, i, j)
+        
+        while queue:
+            state = queue.popleft()
+            if state == B: return seen[state]
+            for ne in neighbor(state):
+                if ne not in seen:
+                    seen[ne] = seen[state] + 1
+                    queue.append(ne)
+        return seen[B]
