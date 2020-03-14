@@ -36,7 +36,7 @@ class Solution:
     
 class Solution:
     '''Math and Hash
-    O(N)/O(1)'''
+    O(N)/O(N)'''
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:
         mod, s = {}, 0
         for i, n in enumerate(nums):
