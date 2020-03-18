@@ -39,15 +39,12 @@ Output:
 
 '''
 
-
 class Solution:
     def wordBreak(self, s: str, word: List[str]) -> List[str]:
-        '''Recursion and Memorization
-        O(N^3)/O(N^3)
-        '''
+        '''Recursion and Memorization'''
         word, N, memo = set(word), len(s), {}
         def backtrack(i, j):
-            if memo.get((i, j), -1) != -1: return memo[i, j]
+            if memo.get(i, -1) != -1: return memo[i]
             if j == N + 1: return [[s[i:j]]] if s[i:j] in word else []
             if s[i:j] in word:
                 sub1 = [[s[i:j]] + ele for ele in backtrack(j, j + 1)] 
@@ -55,7 +52,34 @@ class Solution:
                 sub = sub1 + sub2
             else:
                 sub = backtrack(i, j + 1)
-            memo[i, j] = sub
+            memo[i] = sub
             return sub
         return [" ".join(eles) for eles in backtrack(0, 1)]
     
+    
+
+class Solution:
+    def wordBreak(self, s: str, word: List[str]) -> List[str]:
+        '''Recursion and Memorization'''
+        word, r, memo = set(word), max(len(w) for w in word + ['1']), {len(s): ['']}
+        def sentence(start):
+            if start not in memo:
+                memo[start] = [
+                    s[start:j] + (tail and " " + tail)
+                    for j in range(start+1, start+r+1) if s[start:j] in word
+                    for tail in sentence(j)
+                ]
+            return memo[start]
+        return sentence(0)
+
+
+  class Solution:
+    '''Dynamic Programing'''
+    def wordBreak(self, s: str, word: List[str]) -> bool:
+        wordDict, r, dp, N = set(word), max(len(w) for w in word + ['1']), [[] for _ in range(len(s)+1)], len(s)
+        dp[0] = ['']
+        for i in range(N+1):
+            for j in range(max(i-r, 0), i):
+                if s[j:i] in wordDict and len(dp[j]) > 0:
+                    dp[i] += [head + (head and " ") + s[j:i] for head in dp[j]]
+        return dp[-1]
