@@ -36,7 +36,7 @@ from collections import Counter
 
 
 class Solution:
-    '''O(10000)/O(N)'''
+    '''O(1)/O(1)'''
     def deleteAndEarn(self, nums: List[int]) -> int:
         if not nums: return 0
         dp = Counter(nums)

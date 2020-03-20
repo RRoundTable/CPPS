@@ -44,7 +44,7 @@ class Solution:
         '''Recursion and Memorization'''
         word, N, memo = set(word), len(s), {}
         def backtrack(i, j):
-            if memo.get(i, -1) != -1: return memo[i]
+            if memo.get(i) != -1: return memo[i]
             if j == N + 1: return [[s[i:j]]] if s[i:j] in word else []
             if s[i:j] in word:
                 sub1 = [[s[i:j]] + ele for ele in backtrack(j, j + 1)] 
