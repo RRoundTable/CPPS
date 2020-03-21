@@ -19,6 +19,7 @@ class ListNode:
 
 
 class Solution:
+    '''O(N)/O(1)'''
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         head1 c = l1, 0
         while l1 or l2:
