@@ -53,10 +53,18 @@
 | 48 | [Course Schedule](https://leetcode.com/problems/course-schedule) | graph |                                                              | [A](./graph/Course_Schedule.py) | + |
 | 49 | [Evaluate Division](https://leetcode.com/problems/evaluate-division) | graph |                                                              | [A](./graph/Evaluate_Division.py) | - |
 | 50 | [Network Delay Time](https://leetcode.com/problems/network-delay-time) | graph |                                                              | [A](./graph/Network_Delay_Time.py) |-|
-| 51 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings) | graph | |  ||
-| 52 | [Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree) | graph | |  ||
-|  |  |  | |  ||
-|  |  |  | |  ||
+| 51 | [K-Similar Strings](https://leetcode.com/problems/k-similar-strings) | graph | | [A](./graph/K-Similar_Strings.py) |-|
+| 52 | [Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree) | graph | | [A](./graph/Maximum_Level_Sum_of_a_Binary_Tree.py) |+|
+| 53 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | linked list | | [A](./linkedlist/Add_Two_Numbers.py) |+|
+| 54 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | DP | | [A](./DP/Best_Time_to_Buy_and_Sell_Stock.py) |+|
+| 54 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | heap | | [A](./heap/Kth_Largest_Element_in_an_Array.py) |-|
+| 54 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | heap | | [A](./heap/K_Closest_Points_to_Origin.py) |+|
+| 54 | [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network) | graph | | [A](./graph/Critical_Connections_in_a_Network.py) |-|
+| 54 |  |  | |  ||
+
+
+
+
 
 +: Solved within 30 min
 
