@@ -53,3 +53,19 @@ class Solution2(object):
                 if s < 0: left += 1
                 if s > 0: right -= 1
         return ans if n >= 3 else []
+
+
+class Solution:
+    '''
+    Hash Map   
+    O(N ^ 2)/O(N)'''
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        ans = set(); nums.sort()
+        for i in range(len(nums)-2):
+            h, target = {}, nums[i]
+            for j in range(i+1, len(nums)):
+                if nums[j] not in h:
+                    h[-target - nums[j]] = 1
+                else:
+                    ans.add((target, -target-nums[j], nums[j]))
+        return map(list, list(ans))
