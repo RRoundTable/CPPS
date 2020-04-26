@@ -20,7 +20,7 @@ Output: 49
 
 
 class Solution:
-    '''O(N)/O(N)'''
+    '''O(N)/O(1)'''
     def maxArea(self, height: List[int]) -> int:
         ans, l, r = 0, 0, len(height) - 1
         while l < r:

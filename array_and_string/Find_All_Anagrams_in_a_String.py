@@ -35,6 +35,7 @@ from collections import Counter
 
     
 class Solution:
+    '''O(N)/O(N)'''
     def findAnagrams(self, s: str, p: str) -> List[int]:
         d, res, k, l, r = Counter(p), [], len(p), 0, 0
         while l <= r and r < len(s):
