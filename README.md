@@ -57,10 +57,22 @@
 | 52 | [Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree) | graph | | [A](./graph/Maximum_Level_Sum_of_a_Binary_Tree.py) |+|
 | 53 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | linked list | | [A](./linkedlist/Add_Two_Numbers.py) |+|
 | 54 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | DP | | [A](./DP/Best_Time_to_Buy_and_Sell_Stock.py) |+|
-| 54 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | heap | | [A](./heap/Kth_Largest_Element_in_an_Array.py) |-|
-| 54 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | heap | | [A](./heap/K_Closest_Points_to_Origin.py) |+|
-| 54 | [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network) | graph | | [A](./graph/Critical_Connections_in_a_Network.py) |-|
-| 54 |  |  | |  ||
+| 55 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | heap | | [A](./heap/Kth_Largest_Element_in_an_Array.py) |-|
+| 56 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin) | heap | | [A](./heap/K_Closest_Points_to_Origin.py) |+|
+| 57 | [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network) | graph | | [A](./graph/Critical_Connections_in_a_Network.py) |-|
+| 59 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | array | | [A](./array_and_string/Set_Matrix_Zeroes.py) |+|
+| 60 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | array | | [A](./array_and_string/[A](./array_and_string/Set_Matrix_Zeroes.py)) |-|
+| 61 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique) | array | | [A](./array_and_string/Minimum_Increment_to_Make_Array_Unique.py) |+|
+| 62 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion) | array | | [A](./array_and_string/ZigZag_Conversion.py) |+|
+| 63 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | array | | [A](./array_and_string/Container_With_Most_Water.py) |+|
+| 64 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | array, hash | | [A](./array_and_string/Substring_with_Concatenation_of_All_ Words.py) |-|
+| 65 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | array, hash | | [A](./array_and_string/Find_All_Anagrams_in_a_String.py) |-|
+| 66 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | array, hash | | [A](./array_and_string/Time_Based_Key-Value_Store.py) |-|
+| 67 |  |  | |  ||
+
+
+
+
 
 
 
