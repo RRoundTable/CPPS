@@ -21,6 +21,7 @@ class ListNode:
 
 class Solution:
     '''O(KN)/O(1)'''
+    
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         node = res = ListNode(-1)
         while lists and res:
