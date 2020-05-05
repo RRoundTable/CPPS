@@ -68,7 +68,12 @@
 | 64 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | array, hash | | [A](./array_and_string/Substring_with_Concatenation_of_All_ Words.py) |-|
 | 65 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | array, hash | | [A](./array_and_string/Find_All_Anagrams_in_a_String.py) |-|
 | 66 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | array, hash | | [A](./array_and_string/Time_Based_Key-Value_Store.py) |-|
-| 67 |  |  | |  ||
+| 67 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | linkedlist | | [A](./linkedlist/Merge_k_Sorted_Lists.py) |+|
+| 68 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | linkedlist | | [A](./linkedlist/Reverse_Linked_List_II.py) |-|
+| 69 | [Reorder List](https://leetcode.com/problems/reorder-list) | linkedlist | | [A](./linkedlist/Reorder_List.py) |+|
+| 70 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) | array, hash | | [A](./array_and_string/Top_K_Frequent_Words.py) |-|
+| 71 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count) | array, hash | | [A](./hashtable/Subdomain_Visit_Count.py) |+|
+| 72 |  |  | | [A](./linkedlist/) ||
 
 
 
