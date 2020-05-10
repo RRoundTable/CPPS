@@ -38,7 +38,7 @@ class Solution:
 
 
 class Solution:
-    '''O(NlogK)/O(1)'''
+    '''O(NlogK)/O(k)'''
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         que, res, k = [], ListNode(-1), len(lists)
         node = res
