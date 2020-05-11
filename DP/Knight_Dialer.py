@@ -35,7 +35,6 @@ Note:
 1 <= N <= 5000
 '''
 
-# {1:2, 2:2, 3:2, 4:3, 5:0, 6:3, 7:2, 8:2, 9:2, 0:2}
 class Solution:
     '''O(N)/O(1)'''
     def knightDialer(self, N: int) -> int:
