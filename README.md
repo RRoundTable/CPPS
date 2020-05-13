@@ -65,7 +65,7 @@
 | 61 | [Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique) | array | | [A](./array_and_string/Minimum_Increment_to_Make_Array_Unique.py) |+|
 | 62 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion) | array | | [A](./array_and_string/ZigZag_Conversion.py) |+|
 | 63 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | array | | [A](./array_and_string/Container_With_Most_Water.py) |+|
-| 64 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | array, hash | | [A](./array_and_string/Substring_with_Concatenation_of_All_ Words.py) |-|
+| 64 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | array, hash | |[A](./array_and_string/Substring_with_Concatenation_of_All_Words.py)|-|
 | 65 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) | array, hash | | [A](./array_and_string/Find_All_Anagrams_in_a_String.py) |-|
 | 66 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store) | array, hash | | [A](./array_and_string/Time_Based_Key-Value_Store.py) |-|
 | 67 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | linkedlist | | [A](./linkedlist/Merge_k_Sorted_Lists.py) |+|
@@ -73,7 +73,11 @@
 | 69 | [Reorder List](https://leetcode.com/problems/reorder-list) | linkedlist | | [A](./linkedlist/Reorder_List.py) |+|
 | 70 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words) | array, hash | | [A](./array_and_string/Top_K_Frequent_Words.py) |-|
 | 71 | [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count) | array, hash | | [A](./hashtable/Subdomain_Visit_Count.py) |+|
-| 72 |  |  | | [A](./linkedlist/) ||
+| 72 | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|  dp| | [A](./dp/Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.py) |-|
+| 73 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) |  dp| | [A](./dp/Longest_Valid_Parentheses.py) |-|
+| 74 |  [Unique Paths](https://leetcode.com/list?selectedList=xsiq9foi)|  dp| | [A](./dp/Unique_Paths.py) |+|
+| 75 | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |  dp| | [A](./dp/Partition_to_K_Equal_Sum_Subsets.py) |-|
+| 76 | [Knight Dialer](https://leetcode.com/problems/knight-dialer/) |  dp| | [A](./dp/Knight_Dialer.py) |+|
 
 
 
