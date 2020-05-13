@@ -48,3 +48,37 @@ class Solution:
                 if not stack: 
                     stack.append(i)
         return ans
+
+
+class Solution:
+    '''O(N)/O(N)'''
+    def longestValidParentheses(self, s: str) -> int:
+        dp = [0] * len(s)
+        for i in range(1, len(s)):
+            if s[i] == ')':
+                if s[i-1] == '(':
+                    dp[i] = 2 + dp[i-2] if i - 2 >= 0 else 2
+                elif s[i - dp[i-1] - 1] == "(":
+                    dp[i] = dp[i-1] + dp[i - dp[i-1] - 2] + 2
+        return max(dp) if s else 0 
+    
+class Solution:
+    '''O(N)/O(1)'''
+    def longestValidParentheses(self, s: str) -> int:
+        ans, left, right = 0, 0, 0
+        for i in range(len(s)):
+            if s[i] == ')':
+                right += 1
+                if right > left: left, right = 0, 0
+                ans = max(ans, right * 2) if left == right else ans
+            else:
+                left += 1
+        left, right = 0, 0
+        for i in reversed(range(len(s))):
+            if s[i] == ')':
+                right += 1
+            else:
+                left += 1
+                if left > right: left, right = 0, 0
+                ans = max(ans, right * 2) if left == right else ans
+        return ans
