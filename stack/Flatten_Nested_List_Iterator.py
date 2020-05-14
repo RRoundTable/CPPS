@@ -37,3 +37,26 @@ class NestedIterator:
     
     def hasNext(self) -> bool:
         return len(self.que) 
+
+
+class NestedIterator(object):
+
+    def __init__(self, nestedList):
+        def gen(nestedList):
+            for x in nestedList:
+                if x.isInteger():
+                    yield x.getInteger()
+                else:
+                    for y in gen(x.getList()):
+                        yield y
+        self.gen = gen(nestedList)
+
+    def next(self):
+        return self.value
+
+    def hasNext(self):
+        try:
+            self.value = next(self.gen)
+            return True
+        except StopIteration:
+            return False
