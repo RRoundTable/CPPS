@@ -79,10 +79,10 @@
 | 75 | [Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/) |  dp| | [A](./dp/Partition_to_K_Equal_Sum_Subsets.py) |-|
 | 76 | [Knight Dialer](https://leetcode.com/problems/knight-dialer/) |  dp| | [A](./dp/Knight_Dialer.py) |+|
 | 77 | [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)|  stack, hash| | [A](./stack/Remove_Duplicate_Letters.py) |+|
-| 78 | [ Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)|  | | [A](./stack/Flatten_Nested_List_Iterator.py) |+|
-| 79 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)|  | | [A](./stack/Remove_K_Digits.py) |-|
-| 80 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|  | | [A](./stack/Remove_All_Adjacent_Duplicates_In_String.py) |+|
-| 81 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)|  | | [A](./stack/Minimum_Remove_to_Make_Valid_Parentheses.py) |+|
+| 78 | [ Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)| satck | | [A](./stack/Flatten_Nested_List_Iterator.py) |+|
+| 79 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)| stack | | [A](./stack/Remove_K_Digits.py) |-|
+| 80 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|  stack| | [A](./stack/Remove_All_Adjacent_Duplicates_In_String.py) |+|
+| 81 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)|  stack| | [A](./stack/Minimum_Remove_to_Make_Valid_Parentheses.py) |+|
 | 82 | |  | | [A]() |+|
 | 83 | |  | | [A]() |+|
 
