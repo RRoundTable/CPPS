@@ -83,7 +83,7 @@
 | 79 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)| stack | | [A](./stack/Remove_K_Digits.py) |-|
 | 80 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|  stack| | [A](./stack/Remove_All_Adjacent_Duplicates_In_String.py) |+|
 | 81 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)|  stack| | [A](./stack/Minimum_Remove_to_Make_Valid_Parentheses.py) |+|
-| 82 | |  | | [A]() |+|
+| 82 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|  | | [A](./hash_table/Intersection_of_Two_Arrays.py) |+|
 | 83 | |  | | [A]() |+|
 
 
