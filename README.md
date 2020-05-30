@@ -83,8 +83,12 @@
 | 79 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/)| stack | | [A](./stack/Remove_K_Digits.py) |-|
 | 80 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)|  stack| | [A](./stack/Remove_All_Adjacent_Duplicates_In_String.py) |+|
 | 81 | [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)|  stack| | [A](./stack/Minimum_Remove_to_Make_Valid_Parentheses.py) |+|
-| 82 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|  | | [A](./hash_table/Intersection_of_Two_Arrays.py) |+|
-| 83 | |  | | [A]() |+|
+| 82 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|  hash| | [A](./hash_table/Intersection_of_Two_Arrays.py) |+|
+| 83 | [Edit Distance](https://leetcode.com/problems/edit-distance/)|  dp| | [A](./DP/Edit_Distance.py) |-|
+| 84 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)|  dp| | [A](./DP/Min_Cost_Climbing_Stairs.py) |+|
+| 85 | [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)| array | | [A](./array_and_string/One_Edit_Distance.py) |+|
+| 86 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)| dp | | [A](./DP/Partition_Equal_Subset_Sum.py) |+|
+
 
 
 
