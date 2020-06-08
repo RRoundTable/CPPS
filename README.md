@@ -89,7 +89,15 @@
 | 85 | [One Edit Distance](https://leetcode.com/problems/one-edit-distance/)| array | | [A](./array_and_string/One_Edit_Distance.py) |+|
 | 86 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)| dp | | [A](./DP/Partition_Equal_Subset_Sum.py) |+|
 | 87 | [Concatenated Word](https://leetcode.com/problems/concatenated-words/) | dp | | [A](./DP/Concatenated_Words.py) |+|
-| 87 | [Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | dp | | [A](./DP/Number_of_Dice_Rolls_With_Target_Sum.py) |+|
+| 88 | [Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | dp | | [A](./DP/Number_of_Dice_Rolls_With_Target_Sum.py) |+|
+| 88 | [Flower Planting With No Adjacent](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | graph | | [A](./graph/Flower_Planting_With_No_Adjacent.py) |+|
+| 88 | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) | graph | | [A](./heap/Course_Schedule_III.py) |-|
+| 88 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | graph | | [A](./graph/Accounts_Merge.py) |+|
+| 88 | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | graph | | [A](./graph/Jump_Game_III.py) |+|
+| 88 | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | graph | | [A](./graph/Sort_Integers_by_The_Power_Value.py) |+|
+| 88 | []() | graph | | [A](./graph) |+|
+
+| 88 | []() | graph | | [A](./) |+|
 
 
 
