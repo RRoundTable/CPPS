@@ -75,7 +75,7 @@ class Solution:
             return res
         
         
-        target = [[1,2,3],[4,5,0]]
+        target = [[1,2,3],[4,5,0]]5
         que, seen, ans = deque([board]), set(), 0
        
         while que:
