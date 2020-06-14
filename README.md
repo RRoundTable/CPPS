@@ -91,11 +91,14 @@
 | 87 | [Concatenated Word](https://leetcode.com/problems/concatenated-words/) | dp | | [A](./DP/Concatenated_Words.py) |+|
 | 88 | [Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | dp | | [A](./DP/Number_of_Dice_Rolls_With_Target_Sum.py) |+|
 | 88 | [Flower Planting With No Adjacent](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | graph | | [A](./graph/Flower_Planting_With_No_Adjacent.py) |+|
-| 88 | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) | graph | | [A](./heap/Course_Schedule_III.py) |-|
-| 88 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | graph | | [A](./graph/Accounts_Merge.py) |+|
-| 88 | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | graph | | [A](./graph/Jump_Game_III.py) |+|
-| 88 | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | graph | | [A](./graph/Sort_Integers_by_The_Power_Value.py) |+|
-| 88 | []() | graph | | [A](./graph) |+|
+| 89 | [Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) | graph | | [A](./heap/Course_Schedule_III.py) |-|
+| 90 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | graph | | [A](./graph/Accounts_Merge.py) |+|
+| 91 | [Jump Game III](https://leetcode.com/problems/jump-game-iii/) | graph | | [A](./graph/Jump_Game_III.py) |+|
+| 92 | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | graph | | [A](./graph/Sort_Integers_by_The_Power_Value.py) |+|
+| 93 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | binary search | | [A](./binary_search/Find_First_and_Last_Position_of_Element_in_Sorted_Array.py) |-|
+| 94 | [Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/) | graph | | [A](./graph/Sliding_Puzzle.py) |-|
+| 95 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | graph | | [A](./graph/Find_the_Duplicate_Number.py) |-|
+| 96 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | graph | | [A](./graph/Rotting_Oranges.py) |+|
 
 | 88 | []() | graph | | [A](./) |+|
 
