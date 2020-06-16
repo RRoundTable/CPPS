@@ -100,8 +100,8 @@
 | 95 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | graph | | [A](./graph/Find_the_Duplicate_Number.py) |-|
 | 96 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | graph | | [A](./graph/Rotting_Oranges.py) |+|
 
+| 97 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | graph | | [A](./graph/Remove_Invalid_Parentheses.py) |+|
 | 88 | []() | graph | | [A](./) |+|
-
 
 
 
