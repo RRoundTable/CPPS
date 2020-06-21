@@ -101,7 +101,17 @@
 | 96 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | graph | | [A](./graph/Rotting_Oranges.py) |+|
 
 | 97 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | graph | | [A](./graph/Remove_Invalid_Parentheses.py) |+|
+| 98 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/submissions/) | sort, binary search tree| | [A](./sort/) |-|
+| 99 | [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/submissions/) | array | | [A](./array/../array_and_string/Minimum_Time_Visiting_All_Points.py) |+|
+
+| 100 | [ Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | tree | | [A](./tree/Implement_Trie.py) |+|
+
+| 88 | [Larget_Number](https://leetcode.com/problems/largest-number/) | sort | | [A](./sort/Largest_Number.py) |-|
+
 | 88 | []() | graph | | [A](./) |+|
+
+| 88 | []() | graph | | [A](./) |+|
+
 
 
 
