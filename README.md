@@ -108,7 +108,7 @@
 
 | 88 | [Larget_Number](https://leetcode.com/problems/largest-number/) | sort | | [A](./sort/Largest_Number.py) |-|
 
-| 88 | []() | graph | | [A](./) |+|
+| 88 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | graph, trie, dp | | [A](./dp/../DP/Word_Search_II.py) |-|
 
 | 88 | []() | graph | | [A](./) |+|
 
