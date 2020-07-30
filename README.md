@@ -124,7 +124,7 @@
 
 |105|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| queue, graph||[A](./graph/Number_of_Islands.py) |+|
 
-|105|[]()| array||[A]() |-|
+|105|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| array||[A](./stack/Implement_Queue_using_Stacks.py) |-|
 
 |105|[]()| array||[A]() |-|
 
