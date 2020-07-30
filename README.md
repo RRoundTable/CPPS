@@ -122,7 +122,7 @@
 |105|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)| linkedlist||[A](./linkedlist/Intersection_of_Two_Linked_Lists.py) |+|
 |105|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| binary search||[A]() |-|
 
-|105|[]()| array||[A]() |-|
+|105|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| queue, graph||[A](./graph/Number_of_Islands.py) |+|
 
 |105|[]()| array||[A]() |-|
 
