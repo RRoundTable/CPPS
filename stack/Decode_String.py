@@ -32,3 +32,23 @@ class Solution:
                 stack.append(ele)
         for ele in stack: ans += ele
         return ans
+
+class Solution:
+    def decodeString(self, s: str) -> str:
+        stack, ans = [], ''
+        for c in s:
+            if c in ']':
+                sub = ''
+                while stack:
+                    if stack[-1] == '[':
+                        stack.pop()
+                        k = ''
+                        while stack and stack[-1] in '1234567890':
+                            k = stack.pop() + k
+                        stack.append(int(k) * sub)
+                        break
+                    sub = stack.pop() + sub
+            else:
+                stack.append(c)
+                
+        return "".join(stack)
