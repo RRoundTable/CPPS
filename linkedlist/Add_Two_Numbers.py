@@ -19,14 +19,17 @@ class ListNode:
 
 
 class Solution:
-    '''O(N)/O(1)'''
+    '''O(N)/O(1)
+    -> 새로운 node를 만드는 대신에 처리해주기
+    '''
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        head1 c = l1, 0
+        head1 ,c = l1, 0
         while l1 or l2:
-            l1.val += l2.val + c; c = 0
+            l1.val += l2.val + c if l2 else c
+            c = 0
             if l1.val >= 10: l1.val -= 10; c = 1
             if l2.next or c: l1.next = l1.next if l1.next else ListNode(0)
-            if l1.next or c: l2.next = l2.next if l2.next else ListNode(0)
+            # if l1.next or c: l2.next = l2.next if l2.next else ListNode(0)
             l1, l2 = l1.next, l2.next
         return head1
         

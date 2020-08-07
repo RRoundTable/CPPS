@@ -126,7 +126,7 @@
 
 |105|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| array||[A](./stack/Implement_Queue_using_Stacks.py) |-|
 
-|105|[]()| array||[A]() |-|
+|105|[Invert_Binary_Tree](https://leetcode.com/problems/invert-binary-tree/)| array||[A](./tree/Invert_Binary_Tree.py) |+|
 
 |105|[]()| array||[A]() |-|
 
