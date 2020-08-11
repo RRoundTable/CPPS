@@ -119,18 +119,22 @@
 
 |104|[Maximum Sum of Two Non-Overlapping Subarrays]()| array||[A](./array_and_string/Maximum_Sum_of_Two_Non_Overlapping_Subarrays.py) |-|
 
-|105|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)| linkedlist||[A](./linkedlist/Intersection_of_Two_Linked_Lists.py) |+|
-|105|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| binary search||[A]() |-|
+|106|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)| linkedlist||[A](./linkedlist/Intersection_of_Two_Linked_Lists.py) |+|
+|107|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| binary search||[A]() |-|
 
-|105|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| queue, graph||[A](./graph/Number_of_Islands.py) |+|
+|108|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| queue, graph||[A](./graph/Number_of_Islands.py) |+|
 
-|105|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| array||[A](./stack/Implement_Queue_using_Stacks.py) |-|
+|109|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| array||[A](./stack/Implement_Queue_using_Stacks.py) |-|
 
-|105|[Invert_Binary_Tree](https://leetcode.com/problems/invert-binary-tree/)| array||[A](./tree/Invert_Binary_Tree.py) |+|
+|110|[Invert_Binary_Tree](https://leetcode.com/problems/invert-binary-tree/)| array||[A](./tree/Invert_Binary_Tree.py) |+|
 
-|105|[ Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/)| array||[A](./heap/Trapping_Rain_Water_II.py) |-|
+|111|[ Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/)| array||[A](./heap/Trapping_Rain_Water_II.py) |-|
 
-|105|[]()| array||[A]() |-|
+|112|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)| array||[A](./sort/Kth_Smallest_Element_in_a_Sorted_Matrix.py) |-|
+
+|113|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| array||[A](./sort/Valid_Anagram.py) |+|
+
+|114|[]()| array||[A]() |-|
 
 
 
