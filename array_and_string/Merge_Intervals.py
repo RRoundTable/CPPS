@@ -61,3 +61,26 @@ class Solution(object):
                 ans.append([l, r])
         return ans
         
+class Solution:
+    '''O(N^2)/O(1)'''
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        
+        intervals = sorted(intervals, key=lambda x: x[0])
+        
+        def union(a, b):
+            flatten = (*a, *b)
+            return min(flatten), max(flatten)
+        
+        def is_overrap(a, b):
+            a, b = sorted([a, b], key=lambda x: x[0])
+            if a[-1] < b[0]: return False
+            return True
+        
+        for i in range(len(intervals) - 1):
+            a, b = intervals[i], intervals[i+1]
+            if is_overrap(a, b):
+                merged = union(a, b)
+                intervals[i] = None
+                intervals[i+1] = merged
+                
+        return [ele for ele in intervals if ele]
