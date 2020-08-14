@@ -62,7 +62,7 @@ class Solution(object):
         return ans
         
 class Solution:
-    '''O(N^2)/O(1)'''
+    '''O(NlogN)/O(1)'''
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         
         intervals = sorted(intervals, key=lambda x: x[0])

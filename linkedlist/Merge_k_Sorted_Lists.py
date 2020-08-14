@@ -12,7 +12,7 @@ Input:
 ]
 Output: 1->1->2->3->4->4->5->6
 '''
-from heapq import heappop, heappush
+from heapq import heappop, heappush, heapify
 
 
 class ListNode:
@@ -76,3 +76,28 @@ class Solution:
         if l1: point.next = l1
         else: point.next = l2
         return head.next
+
+
+class Solution:
+    '''
+    heap
+    '''
+    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+        
+        class Wrapper():
+            def __init__(self, node):
+                self.node = node
+            def __lt__(self, other):
+                return self.node.val < other.node.val
+            
+        dummy = merged = ListNode(-1)
+        heap = [Wrapper(l) for l in lists if l]
+        heapify(heap)
+        while heap:
+            wrapped = heappop(heap)
+            merged.next = wrapped.node
+            merged = merged.next
+            if  wrapped.node.next is not None:
+                heappush(heap, Wrapper(wrapped.node.next))
+        return dummy.next
+        
