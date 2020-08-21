@@ -134,7 +134,10 @@
 
 |113|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| array||[A](./sort/Valid_Anagram.py) |+|
 
-|114|[]()| array||[A]() |-|
+|114|[Two Sum](https://leetcode.com/problems/two-sum/)| array||[A](./array_and_string/Two_Sum.py) |+|
+|114|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| hash||[A](./hash/../hash_table/Valid_Sudoku.py) |+|
+|114|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)| hash||[A](./hash/../hash_table/Group_Anagrams.py) |+|
+|114|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)| hash||[A](./hash/../hash_table/Encode_and_Decode_TinyURL.py) |+|
 
 
 

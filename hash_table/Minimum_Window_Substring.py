@@ -33,4 +33,29 @@ class Solution:
                     char[s[l]] += 1
                 l += 1
         return s[ans[1][0]:ans[1][1]] if ans[0] < float('inf') else ''
+
+
+from collections import Counter, defaultdict
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        count = Counter(t)
+        i, j, check, ans = 0, 0, set(count.keys()), ''
+     
+        while i <= j and j < len(s):
+            if s[j] in check:
+                count[s[j]] -= 1
+
+            if all(v <= 0 for v in count.values()):
+                while s[i] not in check or count[s[i]] < 0:
+                    if s[i] in check:
+                        count[s[i]] += 1
+                    i += 1
+                if ans == '' or j - i + 1 < len(ans):
+                    ans = s[i:j+1]
+                if s[i] in check:
+                    count[s[i]] += 1
+                i += 1
+            j += 1
+        return ans
+        
     
