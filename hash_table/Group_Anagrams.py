@@ -29,7 +29,18 @@ class Solution:
 from itertools import groupby
 class Solution:
     def groupAnagrams(self, strs):
-        print(sorted(strs))
         groups = itertools.groupby(sorted(strs, key=sorted), sorted)
         return [list(members) for _, members in groups]
         
+
+from collections import defaultdict, Counter
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        d = defaultdict(list)
+        for word in strs:
+            base = ['0'] * 26
+            count = Counter(word)
+            for key in count:
+                base[ord(key) - ord('a')] = str(count[key])
+            d["".join(base)].append(word)
+        return d.values()
