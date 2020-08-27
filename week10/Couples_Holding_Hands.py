@@ -75,3 +75,33 @@ class Solution:
         c = Counter(union)
         
         return sum(c.values()) - len(set(union))
+
+
+from collections import Counter
+class Solution:
+    def minSwapsCouples(self, row: List[int]) -> int:
+        
+        sets = [i for i in range(len(row) // 2)]
+        
+        def find(a):
+            nonlocal sets
+            if a == sets[a]:
+                return a
+            res = find(sets[a])
+            sets[a] = res
+            return res
+        
+        def union(a, b):
+            nonlocal sets
+            a, b = find(a), find(b)
+            sets[a] = b
+            
+        
+        for i in range(len(row) // 2):
+            union(row[i * 2] // 2, row[i * 2 + 1] // 2)
+            
+        for i in range(len(row)):
+            sets[row[i] // 2] = find(row[i] // 2)
+        
+        return sum(v-1 for v in Counter(sets).values())
+        
