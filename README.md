@@ -135,9 +135,15 @@
 |113|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| array||[A](./sort/Valid_Anagram.py) |+|
 
 |114|[Two Sum](https://leetcode.com/problems/two-sum/)| array||[A](./array_and_string/Two_Sum.py) |+|
-|114|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| hash||[A](./hash/../hash_table/Valid_Sudoku.py) |+|
-|114|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)| hash||[A](./hash/../hash_table/Group_Anagrams.py) |+|
-|114|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)| hash||[A](./hash/../hash_table/Encode_and_Decode_TinyURL.py) |+|
+|115|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| hash||[A](./hash/../hash_table/Valid_Sudoku.py) |+|
+|116|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)| hash||[A](./hash/../hash_table/Group_Anagrams.py) |+|
+|117|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)| hash||[A](./hash_table/Encode_and_Decode_TinyURL.py) |+|
+
+|118|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)| tree||[A](./tree/Path_Sum_II.py) |+|
+|119|[Maximum Binary Tree]()| tree||[A](./tree/Maximum_Binary_Tree.py) |+|
+|120|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/)| tree||[A](./tree/Distribute_Coins_in_Binary_Tree.py) |-|
+|121|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)| tree||[A](./tree/Path_Sum_II.py) |+|
+|122|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)| tree||[A](./tree/Path_Sum_II.py) |+|
 
 
 
