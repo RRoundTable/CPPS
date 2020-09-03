@@ -99,46 +99,28 @@
 | 94 | [Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/) | graph | | [A](./graph/Sliding_Puzzle.py) |-|
 | 95 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | graph | | [A](./graph/Find_the_Duplicate_Number.py) |-|
 | 96 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | graph | | [A](./graph/Rotting_Oranges.py) |+|
-
 | 97 | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | graph | | [A](./graph/Remove_Invalid_Parentheses.py) |+|
 | 98 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/submissions/) | sort, binary search tree| | [A](./sort/) |-|
 | 99 | [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/submissions/) | array | | [A](./array/../array_and_string/Minimum_Time_Visiting_All_Points.py) |+|
-
 | 100 | [ Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | tree | | [A](./tree/Implement_Trie.py) |+|
-
 | 101 | [Larget_Number](https://leetcode.com/problems/largest-number/) | sort | | [A](./sort/Largest_Number.py) |-|
-
 | 102 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | graph, trie, dp | | [A](./dp/../DP/Word_Search_II.py) |-|
-
 | 103 | [백만장자 프로젝트](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LrsUaDxcDFAXc&categoryId=AV5LrsUaDxcDFAXc&categoryType=CODE) | array | | [A](./array_and_string/Millionaire_Project.py) |+|
-
-
 |104|[Maximum Sum of Two Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/)| array||[A](./array_and_string/Maximum_Sum_of_Two_Non_Overlapping_Subarrays.py) |-|
-|104|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/
-)| array||[A](./array_and_string/Wiggle_Subsequence.py) |+|
-
+|104|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)| array||[A](./array_and_string/Wiggle_Subsequence.py) |+|
 |104|[Maximum Sum of Two Non-Overlapping Subarrays]()| array||[A](./array_and_string/Maximum_Sum_of_Two_Non_Overlapping_Subarrays.py) |-|
-
 |106|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)| linkedlist||[A](./linkedlist/Intersection_of_Two_Linked_Lists.py) |+|
 |107|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| binary search||[A]() |-|
-
 |108|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| queue, graph||[A](./graph/Number_of_Islands.py) |+|
-
 |109|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| array||[A](./stack/Implement_Queue_using_Stacks.py) |-|
-
 |110|[Invert_Binary_Tree](https://leetcode.com/problems/invert-binary-tree/)| array||[A](./tree/Invert_Binary_Tree.py) |+|
-
 |111|[ Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/)| array||[A](./heap/Trapping_Rain_Water_II.py) |-|
-
 |112|[Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)| array||[A](./sort/Kth_Smallest_Element_in_a_Sorted_Matrix.py) |-|
-
 |113|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| array||[A](./sort/Valid_Anagram.py) |+|
-
 |114|[Two Sum](https://leetcode.com/problems/two-sum/)| array||[A](./array_and_string/Two_Sum.py) |+|
 |115|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| hash||[A](./hash/../hash_table/Valid_Sudoku.py) |+|
 |116|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)| hash||[A](./hash/../hash_table/Group_Anagrams.py) |+|
 |117|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)| hash||[A](./hash_table/Encode_and_Decode_TinyURL.py) |+|
-
 |118|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)| tree||[A](./tree/Path_Sum_II.py) |+|
 |119|[Maximum Binary Tree]()| tree||[A](./tree/Maximum_Binary_Tree.py) |+|
 |120|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/)| tree||[A](./tree/Distribute_Coins_in_Binary_Tree.py) |-|
