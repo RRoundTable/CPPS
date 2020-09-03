@@ -33,3 +33,23 @@ class Solution:
                     l, r = l - 1, r + 1
                 else: break
         return s[ans[1][0]: ans[1][1] + 1] if s else ''
+
+
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        left, right, max_length = 0, 0, min(1, len(s))
+        for c_idx in range(len(s) - 1):
+            l, r = c_idx, c_idx
+            while l - 1 >= 0 and r + 1 < len(s) and s[l-1] == s[r+1]:
+                l -= 1; r += 1
+            if r - l + 1 > max_length:
+                max_length = r - l + 1
+                left, right = l, r
+            l, r = c_idx, c_idx + 1
+            while l - 1 >= 0 and r + 1 < len(s) and s[l-1] == s[r+1] and s[l] == s[r]:
+                l -= 1; r += 1
+            if r - l + 1 > max_length and s[c_idx] == s[c_idx+1]:
+                max_length = r - l + 1
+                left, right = l, r
+        
+        return s[left:right+1]

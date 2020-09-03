@@ -10,7 +10,7 @@
 |  5  | Letter Combinations of a Phone Number | string | [leetcode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week2/Letter_Combinations_of_a_Phone_Number.py) | -    |
 |  6  | Move Zeroes | array | [leetcode](https://leetcode.com/problems/move-zeroes/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week2/Move_Zeros.py) |      |
 |  7   | Spiral Matrix                         | array       | [leetcode](https://leetcode.com/problems/spiral-matrix/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week2/Move_Zeros.py) | -    |
-|  8  | Word Search | array | [leetcode](https://leetcode.com/problems/word-search/) | [A](https://leetcode.com/problems/word-search/) | -    |
+|  8  | Word Search | array | [leetcode](https://leetcode.com/problems/word-search/) | [A](./week2/Word_Search.py) | -    |
 |  9  | [3Sum](https://leetcode.com/problems/3sum) | array |                                              | [A](./array_and_string/3Sum.py) | -   |
 |  10  | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | array    |                                                              | [A](./array_and_string/Merge_Intervals.py)                   | -    |
 |  11  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | array    |                                                              | [A](./array_and_string/Subarray_Sum_Equals_K.py)             | +    |
