@@ -53,3 +53,16 @@ class Solution:
                 left, right = l, r
         
         return s[left:right+1]
+
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        T = '#'.join(f'#{s}#')
+        dp, R, C = [0] * len(T), 0, 0
+        for i in range(1, len(T) - 1):
+            dp[i] = (R > i) and min(R - i, dp[2*C - i])
+            while i + 1 + dp[i] < len(T) and i - 1 - dp[i] >= 0 and T[i + 1 + dp[i]] == T[i - 1 - dp[i]]:
+                dp[i] += 1
+            if i + dp[i] > R:
+                C, R = i, dp[i] + i
+        maxLen, centerIndex = max((n, i) for i, n in enumerate(dp))
+        return s[(centerIndex  - maxLen)//2: (centerIndex  + maxLen)//2]
