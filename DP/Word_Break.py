@@ -61,3 +61,38 @@ class Solution:
                         if end == len(s): return True
                 visited[start] = True
         return False
+
+
+class Solution:
+    def wordBreak(self, s: str, word_dict: List[str]) -> bool:
+        word_dict = set(word_dict)
+        word_len = set(map(len, word_dict))
+
+        def backtrack(s):
+            nonlocal word_dict, word_len
+            if s == '': return True
+            for window in word_len:
+                for i in range(len(s) - window + 1):
+                    if s[i: i + window] in word_dict:
+                        if backtrack(s[:i]) and backtrack(s[i+window:]):
+                            return True
+            return False
+        return backtrack(s)
+    
+    
+class Solution:
+    def wordBreak(self, s: str, word_dict: List[str]) -> bool:
+        word_dict = set(word_dict)
+        word_len, n  = set(map(len, word_dict)), len(s)
+        
+        dp = [[False] * n for _ in range(n)]
+        
+        for i in range(n):
+            for j in range(i, n):
+                if s[i:j+1] in word_dict: dp[i][j] = True
+
+        for i in range(n):
+            for j in range(i, n):
+                for k in range(i, j):
+                    dp[i][j] = dp[i][j] or (dp[i][k] and dp[k+1][j])
+        return dp[0][-1]

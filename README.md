@@ -125,6 +125,9 @@
 |119|[Maximum Binary Tree]()| tree||[A](./tree/Maximum_Binary_Tree.py) |+|
 |120|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/)| tree||[A](./tree/Distribute_Coins_in_Binary_Tree.py) |-|
 |121|[Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/)| array||[A](./array/../array_and_string/Get_Equal_Substrings_Within_Budget.py) |+|
+|122|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| tree||[A](./tree/Unique_Binary_Search_Trees.py) |+|
+|122|[Burst Balloons](https://leetcode.com/problems/path-sum-ii/)| DP||[A](./DP/Burst_Balloons.py) |+|
+|122|[Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/)| DP||[A](./DP/Matrix_Block_Sum.py) |+|
 |122|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)| tree||[A](./tree/Path_Sum_II.py) |+|
 
 
