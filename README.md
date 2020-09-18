@@ -128,7 +128,12 @@
 |122|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| tree||[A](./tree/Unique_Binary_Search_Trees.py) |+|
 |122|[Burst Balloons](https://leetcode.com/problems/path-sum-ii/)| DP||[A](./DP/Burst_Balloons.py) |+|
 |122|[Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/)| DP||[A](./DP/Matrix_Block_Sum.py) |+|
-|122|[Path Sum II](https://leetcode.com/problems/path-sum-ii/)| tree||[A](./tree/Path_Sum_II.py) |+|
+|122|[Majority Element](https://leetcode.com/problems/majority-element/)| Divide_and_Conquer||[A](./Divide_and_Conquer/Majority_Element.py) |+|
+|122|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| Divide_and_Conquer||[A](./Divide_and_Conquer/The_Skyline_Problem.py) |+|
+|122|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)| Divide_and_Conquer||[A](./Divide_and_Conquer/Search_a_2D_Matrix_II.py) |+|
+|122|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)| Divide_and_Conquer||[A](./Divide_and_Conquer/Different_Ways_to_Add_Parentheses.py) |+|
+|122|[Expression Add Operators](https://leetcode.com/problems/expression-add-operators//)| Divide_and_Conquer||[A](./Divide_and_Conquer/Expression_Add_Operators.py) |+|
+
 
 
 
