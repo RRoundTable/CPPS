@@ -27,8 +27,10 @@ class Solution:
         oper = {
             '+': operator.add, '-': operator.sub, '*': operator.mul
         }
+        memo = {}
         def backtrack(input):
-            nonlocal oper
+            nonlocal oper, memo
+            if input in memo: return memo[input]
             if '+' not in input and '-' not in input and '*' not in input: return [int(input)]
             possible_res = []
             for i, ele in enumerate(input):
@@ -36,6 +38,7 @@ class Solution:
                     for front in backtrack(input[:i]):
                         for back in backtrack(input[i+1:]): 
                             possible_res.append(oper[ele](front, back))
+            memo[input] = possible_res
             return possible_res
         return backtrack(input)
         
