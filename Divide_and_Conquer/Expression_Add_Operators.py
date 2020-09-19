@@ -33,28 +33,22 @@ num only contain digits.
 
 class Solution:
     def addOperators(self, num: str, target: int) -> List[str]:
-        oper = {'+': operator.add, '-': operator.sub, '*': operator.mul}
         ans = []
-        def search(idx, pre_res, cum_res, string):
-        
-            nonlocal ans, target
-            if idx >= len(num):
-                if string and eval(string) == target:
+        def dfs(i, string, curr, last):
+            nonlocal ans, num, target
+            if i == len(num):
+                if curr == target:
                     ans.append(string)
                 return
-            # No operation
-            if not (pre_res == 0 and string and string[-1] == '0'):
-               
-                search(idx + 1, pre_res * 10 + int(num[idx]), cum_res - pre_res + pre_res * 10 + int(num[idx]), string + num[idx])
-            if string and string[-1] not in oper.keys():
-                # add
-                search(idx + 1, int(num[idx]), cum_res + int(num[idx]), string + '+' + num[idx])
-                # sub
-                search(idx + 1, int(num[idx]), cum_res - int(num[idx]), string + '-' + num[idx])
-                # mul
-                if num[idx] == '0' or (string and string[-1]) == '0': new_pre_res = 0
+            c = 0
+            for j in range(i, len(num)):
+                c = c * 10 + int(num[j])
+                if i == 0:
+                    dfs(j+1, str(c), c, c)
                 else:
-                    new_pre_res = int(num[idx]) * int(pre_res)
-                search(idx + 1, new_pre_res, cum_res - pre_res + new_pre_res, string + '*' + num[idx])
-        search(0, 0, 0, '')
+                    dfs(j+1, string + '*' + str(c), curr - last + last * c, last * c)
+                    dfs(j+1, string + '+' + str(c), curr + c, c)
+                    dfs(j+1, string + '-' + str(c), curr - c, -c)
+                if num[i] == '0': break
+        dfs(0, '', 0, 0)
         return ans
