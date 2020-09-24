@@ -104,3 +104,39 @@ class Solution:
                     return possible
         return possible
 
+
+class Solution:
+    def solveSudoku(self, board: List[List[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        row, col, table = defaultdict(set), defaultdict(set), defaultdict(set)
+        empty = 0
+        for i in range(9):
+            for j in range(9):
+                if board[i][j] == '.': empty +=1; continue
+                row[i].add(board[i][j])
+                col[j].add(board[i][j])
+                table[i//3*3+j//3].add(board[i][j])
+                
+        def undo(i, j, v):
+            nonlocal board, row, col, table
+            board[i][j] = "."
+            row[i].remove(v); col[j].remove(v); table[i // 3 * 3 + j // 3].remove(v)
+            
+        def solve(idx, empty):
+            nonlocal board, row, col, table
+            if idx == 81:
+                return empty == 0
+            i, j = idx // 9, idx % 9
+            if board[i][j] == ".":
+                for v in {"1", "2", "3", "4", "5", "6", "7", "8", "9"} - (row[i] | col[j] | table[i // 3 * 3 + j // 3]):
+                    board[i][j] = v
+                    row[i].add(v); col[j].add(v); table[i // 3 * 3 + j // 3].add(v)
+                    if solve(idx + 1, empty - 1): return True
+                    undo(i, j, v)
+            else:
+                if solve(idx + 1, empty): return True
+            return False
+
+        solve(0, empty)
