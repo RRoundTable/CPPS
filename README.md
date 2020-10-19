@@ -5,7 +5,7 @@
 |  0  | Game of Life                  | array       | [leetcode](https://leetcode.com/problems/game-of-life/)      | [A](https://github.com/RRoundTable/CPPS/blob/master/week1/Game_of_Life.py) | -    |
 |  1  | Generate Parentheses          | string      | [leetcode](https://leetcode.com/problems/generate-parentheses/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week1/Generate_Parentheses.py) | -    |
 |  2  | Product of Array Except Self  | array       | [leetcode](https://leetcode.com/problems/product-of-array-except-self/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week1/Product_of_Array_Except_Self.py) | -    |
-|  3  | Reorder Data in Log Files     | string      | [leetcode](https://leetcode.com/problems/reorder-data-in-log-files/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week1/Reorder_Data_in_Log_Files.py) | -    |
+|  3  | Reorder Data in Log Files     | string      | [leetcode](https://leetcode.com/problems/reorder-data-in-log-files/) | [A](./array_and_string/Reorder_Data_in_Log_Files.py) | -    |
 |  4  | First Missing Positive | array | [leetcode](https://leetcode.com/problems/first-missing-positive/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week2/First_Missing_Positive.py) | -    |
 |  5  | Letter Combinations of a Phone Number | string | [leetcode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week2/Letter_Combinations_of_a_Phone_Number.py) | -    |
 |  6  | Move Zeroes | array | [leetcode](https://leetcode.com/problems/move-zeroes/) | [A](https://github.com/RRoundTable/CPPS/blob/master/week2/Move_Zeros.py) |      |
