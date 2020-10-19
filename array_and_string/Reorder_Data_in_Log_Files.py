@@ -40,21 +40,15 @@ from typing import List
 
 class Solution:
     def reorderLogFiles(self, logs: List[str]) -> List[str]:
-        digits = []
-        letters = []
-        for i in range(len(logs)):
-            word = logs[i].split(" ", 1)[-1][0]
-            if word.isdigit():
-                digits.append(logs[i])
+        let, dig = [], []
+        for ele in logs:
+            if ele[-1] in '0123456789':
+                dig.append(ele)
             else:
-                letters.append(logs[i])
-        # sorting
-        letters = sorted(letters, key=lambda x:x.split(" ", 1)[-1])
+                let.append(ele)
+        def compose(s):
+            s = s.split()
+            return s[1:] + [s[0]]
+        let = sorted(let, key=lambda x: compose(x))
+        return let + dig
         
-        for i in range(len(letters) - 1):
-            iden1, cont1 = letters[i].split(" ", 1)
-            iden2, cont2 = letters[i+1].split(" ", 1)
-            if cont1 == cont2:
-                if iden1 > iden2:
-                    letters[i], letters[i+1] = letters[i+1], letters[i]
-        return letters + digits
