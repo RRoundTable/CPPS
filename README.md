@@ -140,7 +140,7 @@
 |134|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)| stack||[A](./stack/Binary_Search_Tree_Iterator.py) |-|
 |135|[Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)| queue||[A](./stack/Design_Circular_Queue.py) |+|
 |136|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)| math||[A](./math/Reverse_Integer.py) |+|
-|136|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/)| math||[A](./math/Consecutive_Numbers_Sum.py |-|
+|136|[Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/)| math||[A](./math/Consecutive_Numbers_Sum.py) |-|
 |136|[Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/)| math||[A](./math/Robot_Bounded_In_Circle.py) |+||
 
 
