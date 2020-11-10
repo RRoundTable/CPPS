@@ -144,6 +144,9 @@
 |138|[Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/)| math||[A](./math/Robot_Bounded_In_Circle.py) |+||
 |139|[Find Winner on a Tic Tac Toe Game](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/)| array||[A](./array_and_string/Find_Winner_on_a_Tic_Tac_Toe_Game.py) |+||
 |140|[Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state/)| array||[A](./array_and_string/Valid_Tic-Tac-Toe_State.py) |+||
+|141|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| array||[A](./array_and_string/Best_Time_to_Buy_and_Sell_Stock_II.py) |+||
+|142|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)| array||[A](./heap/Cheapest_Flights_Within_K_Stops.py) |+||
+|143|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)| graph||[A](./graph/Shortest_Path_Visiting_All_Nodes.py) |+||
 
 
 
