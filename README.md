@@ -147,6 +147,11 @@
 |141|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| array||[A](./array_and_string/Best_Time_to_Buy_and_Sell_Stock_II.py) |+||
 |142|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)| array||[A](./heap/Cheapest_Flights_Within_K_Stops.py) |+||
 |143|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)| graph||[A](./graph/Shortest_Path_Visiting_All_Nodes.py) |+||
+|143|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)| array||[A](./array_and_string/Longest_Palindrome.py) |+||
+|143|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)| graph||[A](./tree/Verify_Preorder_Serialization_of_a_Binary_Tree.py) |+||
+|143|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)| graph||[A](./graph/Shortest_Path_Visiting_All_Nodes.py) |+||
+
+
 
 
 
