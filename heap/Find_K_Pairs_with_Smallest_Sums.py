@@ -24,7 +24,7 @@ Input: nums1 = [1,2], nums2 = [3], k = 3
 Output: [1,3],[2,3]
 Explanation: All possible pairs are returned from the sequence: [1,3],[2,3]
 '''
-from heapq import heappop, heappush, nsmallest
+from heapq import heappop, heappush, nsmallest, heapify
 
 
 class Solution:
@@ -34,3 +34,17 @@ class Solution:
             for n2 in nums2:
                 heappush(heap, [n1 + n2, n1, n2])
         return [ele[1:] for ele in nsmallest(k, heap)]
+
+
+class Solution:
+    def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
+        if not nums1 or not nums2: return []
+        res, heap = [], [[nums1[i] + nums2[0], i, 0] for i in range(len(nums1))]
+        heapify(heap)
+        while heap and len(res) < k:
+            s, n1, n2 = heappop(heap)
+            if n2 < len(nums2):
+                res.append([nums1[n1], nums2[n2]])
+            if n2 + 1 < len(nums2):
+                heappush(heap, [nums1[n1] + nums2[n2+1], n1, n2 + 1])
+        return res
