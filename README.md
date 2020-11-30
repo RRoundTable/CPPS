@@ -150,9 +150,12 @@
 |144|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)| array||[A](./array_and_string/Longest_Palindrome.py) |+||
 |145|[Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)| graph||[A](./tree/Verify_Preorder_Serialization_of_a_Binary_Tree.py) |+||
 |146|[Target Sum](https://leetcode.com/problems/target-sum/)| dp||[A](./DP/Target_Sum.py) |+||
-|146|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)| heap||[A](./heap/Find_K_Pairs_with_Smallest_Sums.py) |+||
-|146|[Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)| heap||[A](./heap/Range_Sum_of_Sorted_Subarray_Sums.py) |+||
-|146|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/)| sort||[A](./sort/Rearrange_Words_in_a_Sentence.py) |+||
+|147|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)| heap||[A](./heap/Find_K_Pairs_with_Smallest_Sums.py) |+||
+|148|[Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)| heap||[A](./heap/Range_Sum_of_Sorted_Subarray_Sums.py) |+||
+|149|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/)| sort||[A](./sort/Rearrange_Words_in_a_Sentence.py) |+||
+|150|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| DP||[A](./DP/Combination_Sum_III.py) |+||
+|151|[Can I Win](https://leetcode.com/problems/can-i-win/)| DP||[A](./DP/Can_I_Win.py) |-||
+|152|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| graph||[A](./DP/Can_I_Win.py) |-||
 
 
 
