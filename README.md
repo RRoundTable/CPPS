@@ -155,7 +155,7 @@
 |149|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/)| sort||[A](./sort/Rearrange_Words_in_a_Sentence.py) |+||
 |150|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| DP||[A](./DP/Combination_Sum_III.py) |+||
 |151|[Can I Win](https://leetcode.com/problems/can-i-win/)| DP||[A](./DP/Can_I_Win.py) |-||
-|152|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| graph||[A](./DP/Can_I_Win.py) |-||
+|152|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| graph||[A](./graph/Minimum_Jumps_to_Reach_Home.py) |-||
 
 
 
