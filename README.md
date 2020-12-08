@@ -155,13 +155,17 @@
 |149|[Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/)| sort||[A](./sort/Rearrange_Words_in_a_Sentence.py) |+||
 |150|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| DP||[A](./DP/Combination_Sum_III.py) |+||
 |151|[Can I Win](https://leetcode.com/problems/can-i-win/)| DP||[A](./DP/Can_I_Win.py) |-||
-|152|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| graph||[A](./graph/Minimum_Jumps_to_Reach_Home.py) |-||
+|152|[Minimum Jumps to Reach Home](https://leetcode.com/problems/minimum-jumps-to-reach-home/)| graph||[A](./graph/Minimum_Jumps_to_Reach_Home.py) |+||
+|153|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)| dp||[A](./DP/Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py) |-||
+|154|[ K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/)| DP||[A](./DP/K-Concatenation_Maximum_Sum.py) |-||
+|155|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)| DP||[A](./DP/Pizza_With_3n_Slices.py) |-||
 
 
 
 
 
 
+Best Time to Buy and Sell Stock with Transaction Fee
 
 
 
