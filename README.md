@@ -159,6 +159,12 @@
 |153|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)| dp||[A](./DP/Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py) |-||
 |154|[ K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/)| DP||[A](./DP/K-Concatenation_Maximum_Sum.py) |-||
 |155|[Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices/)| DP||[A](./DP/Pizza_With_3n_Slices.py) |-||
+|156|[Word Ladder](https://leetcode.com/problems/word-ladder/)| graph||[A](./graph/Word_Ladder.py) |+||
+|157|[Flood Fill](https://leetcode.com/problems/flood-fill/)| graph||[A](./graph/../Flood_Fill.py) |+||
+|158|[Design Underground System](https://leetcode.com/problems/design-underground-system/)| hash||[A](./hash/../hash_table/Design_Underground_System.py) |+||
+
+
+
 
 
 
